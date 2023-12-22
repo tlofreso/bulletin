@@ -11,6 +11,6 @@ jobs:
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           BULLETIN_ASSISTANT_ID: ${{ secrets.BULLETIN_ASSISTANT_ID }}
-        run: echo "this will parse Mass times from bulletins"
+        run: printenv BULLETIN_ASSISTANT_ID
       - name: Publish Masstimes
         run: echo "this will publish the parsed data to Notion"
