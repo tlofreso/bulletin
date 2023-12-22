@@ -2,6 +2,7 @@ name: Mass time runner
 run-name: Extract masstimes from parish bulletins ⛪️
 on: [push]
 jobs:
+<<<<<<< HEAD
   Masstime-Extractor:
     runs-on: ubuntu-latest
     steps:
@@ -11,3 +12,9 @@ jobs:
         run: echo "this will parse Mass times from bulletins"
       - name: Publish Masstimes
         run: echo "this will publish the parsed data to Notion"
+=======
+  Download-Bulletins:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+>>>>>>> 6e1f062087d2ea5107760e94bbe3ee10b0e34cc0
