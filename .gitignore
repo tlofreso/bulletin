@@ -1,8 +1,5 @@
 .env
 .DC_Store
-<<<<<<< HEAD
 notes
-=======
->>>>>>> 6e1f062 (update gitignore)
 venv/
 bulletins/
