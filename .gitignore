@@ -1,3 +1,4 @@
 .env
+.DC_Store
 venv/
 bulletins/
