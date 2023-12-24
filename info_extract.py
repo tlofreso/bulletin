@@ -45,10 +45,10 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
     )
 
     while run.status in ["queued", "in_progress", "cancelling"]:
-        print(run.status)
+        #print(run.status)
         sleep(2)
         run = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
-    print(run.status)
+    #print(run.status)
 
     messages = client.beta.threads.messages.list(
         thread_id=thread.id
@@ -58,7 +58,7 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
     client.beta.threads.delete(thread.id)
 
     response_string = messages.data[0].content[0].text.value
-    print(response_string)
+    #print(response_string)
     json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
     response_json = json.loads(json_str)
     response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]

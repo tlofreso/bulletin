@@ -92,7 +92,7 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
     else:
         response = client.databases.query(database_id, start_cursor=cursor)
 
-    print(response.keys())
+    #print(response.keys())
 
     results = []
     for row in response["results"]:
