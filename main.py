@@ -64,19 +64,20 @@ def main():
     notion_client = get_notion_client_from_environment()
 
     parish_ids_to_run = args.parish_ids
-    if len(parish_ids_to_run) == 0 and not args.all:
-        sys.exit(f"Error: No parishes specified. Use -a or positional arguments to specify parishes")
-
-    elif args.all:
+    if args.all:
         print("Running against all enabled parishes...")
         all_parishes = get_all_parishes(notion_client, config.parish_db_id)
         parishes_to_run = [p for p in all_parishes if p.enabled]
         if args.verbose:
-            print("Found the following enabled parishes:")
+            print(f"Found the following {len(parishes_to_run)} enabled parishes:")
             for p in parishes_to_run:
                 print(p)
 
         parish_ids_to_run = [p.parish_id for p in parishes_to_run]
+
+    if len(parish_ids_to_run) == 0:
+        sys.exit(f"Error: No parishes specified or none found enabled in DB. Use -a or positional arguments to specify parishes")
+
 
     for parish_id in parish_ids_to_run:
         run_parish(parish_id, config, args.dry_run, args.verbose)
