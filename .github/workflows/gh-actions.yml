@@ -18,3 +18,6 @@ jobs:
           pip list
           pwd
           ls -la
+      - name: Run Main
+        run: |
+          python main.py -avd
