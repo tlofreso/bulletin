@@ -13,11 +13,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Python
-        run: |
-          pip install -r requirements.txt
-          pip list
-          pwd
-          ls -la
+        uses: actions/setup-python@v5
+        with:
+          cache: 'pip'
+      - run: pip install -r requirements.txt
       - name: Run Main
         run: |
           python main.py -avd
