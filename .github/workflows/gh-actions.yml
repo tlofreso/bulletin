@@ -1,16 +1,19 @@
 name: Mass time runner
 run-name: Extract masstimes from parish bulletins ⛪️
 on: [push]
+env:
+  OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  BULLETIN_ASSISTANT_ID: ${{ secrets.BULLETIN_ASSISTANT_ID }}
+  NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+  PARISH_DB_ID: ${{ secrets.PARISH_DB_ID }}
 jobs:
   Masstime-Extractor:
     runs-on: ubuntu-latest
     steps:
-      - name: Download Bulletins
-        run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
-      - name: Parse Bulletins
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          BULLETIN_ASSISTANT_ID: ${{ secrets.BULLETIN_ASSISTANT_ID }}
-        run: printenv BULLETIN_ASSISTANT_ID
-      - name: Publish Masstimes
-        run: echo "this will publish the parsed data to Notion"
+      - name: Run Main
+        run: printenv
+      - name: Setup Python
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          python --version
