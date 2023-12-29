@@ -1,3 +1,4 @@
+import json
 import os
 from typing import List
 
@@ -145,9 +146,11 @@ def updateContent(client:Client, parishKey:str, updated_properties:dict):
 
 def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], analysis_log:List[str]):
     log_text = "\n".join(analysis_log)
+    result_text = json.dumps([m.model_dump() for m in mass_times])
     parish_page_key = get_parish_page_key(client, db_id, parish_id)
     updated_properties = {
-        "GPT Logs": get_text_property_json(log_text)
+        "GPT Logs": get_text_property_json(log_text),
+        "GPT Results": get_text_property_json(result_text)
     }
     updateContent(client, parish_page_key, updated_properties)
 

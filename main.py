@@ -54,13 +54,13 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
         openai_client = Client()
         temp_file.seek(0)
         mass_times = get_mass_times(openai_client, config.bulletin_assistant_id, temp_file)
-        log(f"Extracted {len(mass_times)} mass times", console=True)
+        log(f"Extracted {len(mass_times)} mass times.", console=True)
 
         for mass_time in mass_times:
             log(f"Found mass {mass_time}", console=verbose)
 
         if dry_run:
-            log(f"Dry run - skipping DB update", console=True)
+            log(f"Dry run - skipping DB update.", console=True)
         else:
             notion_client = get_notion_client_from_environment()
             upload_parish_analysis(
@@ -70,7 +70,9 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
                 mass_times, 
                 analysis_log
             )
-            log(f"Uploaded")
+            log(f"Uploaded to Notion.", console=True)
+
+    log(f"Finished.", console=True)
 
 
 def main():
