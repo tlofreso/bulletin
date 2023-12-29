@@ -9,12 +9,17 @@ DAYS_TO_LOOK_BEFORE_GIVING_UP = 30
 def download_bulletin(parish_id:str, file:IO[bytes]):
     """
     Given a parishesonline parish ID in region 14, download the parish bulletin
+    to the given file-like.  Return the URL the bulletin was found on.
     """
 
     # Search backwards in time until we find a bulletin
     current_date = datetime.now()
     success = False
+    url = ""
     for i in range(30):
+        if success:
+            break
+
         date_to_check = current_date - timedelta(days=i)
         filename = date_to_check.strftime(PARISHES_ONLINE_FILE_FORMAT)
         url = f"{PARISHES_ONLINE_ROOT}/{parish_id}/{filename}"
@@ -29,6 +34,8 @@ def download_bulletin(parish_id:str, file:IO[bytes]):
 
     if not success:
         raise Exception("No bulletin found")
+
+    return url
 
 if __name__ == "__main__":
     import tempfile

@@ -48,7 +48,7 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
     log("Process start.", console=True)
 
     with TemporaryFile('w+b') as temp_file:
-        download_bulletin(parish_id, temp_file)
+        url = download_bulletin(parish_id, temp_file)
         log("Downloaded bulletin.", console=True)
 
         openai_client = Client()
@@ -68,6 +68,7 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
                 config.parish_db_id, 
                 parish_id, 
                 mass_times, 
+                url,
                 analysis_log
             )
             log(f"Uploaded to Notion.", console=True)
