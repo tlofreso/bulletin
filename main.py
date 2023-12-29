@@ -5,7 +5,7 @@ from tempfile import TemporaryFile
 
 from download_bulletins import download_bulletin
 from info_extract import get_mass_times
-from notion_stuff import get_notion_client_from_environment, get_all_parishes
+from notion_stuff import get_notion_client_from_environment, get_all_parishes, upload_parish_analysis
 from openai import Client
 from rich import print
 
@@ -34,26 +34,43 @@ def get_config():
 
     return argparse.Namespace(**config)
 
-def parish_log(parish_id:str, message):
-    print(f"Parish {parish_id}: {message}")
 
 def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
-    parish_log(parish_id, "Process start.")
+
+    # Tiny not-great logging utility
+    analysis_log = []
+    def log(message, console=False):
+        """Adds something to the log we'll write to notion, and optionally prints it out"""
+        analysis_log.append(message)
+        if console:
+            print(f"Parish {parish_id}: {message}")
+
+    log("Process start.", console=True)
 
     with TemporaryFile('w+b') as temp_file:
         download_bulletin(parish_id, temp_file)
-        parish_log(parish_id, "Downloaded bulletin.")
+        log("Downloaded bulletin.", console=True)
 
         openai_client = Client()
         temp_file.seek(0)
         mass_times = get_mass_times(openai_client, config.bulletin_assistant_id, temp_file)
-        parish_log(parish_id, f"Extracted {len(mass_times)} mass times")
+        log(f"Extracted {len(mass_times)} mass times", console=True)
 
-        if verbose:
-            for mass_time in mass_times:
-                parish_log(parish_id, f"Found mass {mass_time}")
+        for mass_time in mass_times:
+            log(f"Found mass {mass_time}", console=verbose)
+
         if dry_run:
-            parish_log(parish_id, f"Dry run - skipping DB update")
+            log(f"Dry run - skipping DB update", console=True)
+        else:
+            notion_client = get_notion_client_from_environment()
+            upload_parish_analysis(
+                notion_client, 
+                config.parish_db_id, 
+                parish_id, 
+                mass_times, 
+                analysis_log
+            )
+            log(f"Uploaded")
 
 
 def main():
@@ -77,7 +94,6 @@ def main():
 
     if len(parish_ids_to_run) == 0:
         sys.exit(f"Error: No parishes specified or none found enabled in DB. Use -a or positional arguments to specify parishes")
-
 
     for parish_id in parish_ids_to_run:
         run_parish(parish_id, config, args.dry_run, args.verbose)

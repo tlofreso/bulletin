@@ -4,6 +4,8 @@ from typing import List
 from notion_client import Client
 from pydantic import BaseModel
 
+from info_extract import MassTime
+
 database_id = "00f6fa861276497580fbf6ef48bc53e9"
 
 def get_notion_client_from_environment() -> Client:
@@ -39,18 +41,30 @@ def createParish(parishName):
         }
     )
 
-def findPageID(parishName):
-    response = notion.databases.query(
-        **{"database_id": database_id,
-           "filter": {
-               "property": "Name",
-               "title": {"equals": parishName}
-            }
+def findPageID(client:Client, db_id:str, filter:dict):
+    response = client.databases.query(
+        **{"database_id": db_id,
+           "filter": filter
         }
     )
     resultList = [i["id"] for i in response['results']]     #Coming out of the list, the key is ['hash-code-here']
     resultList = str(resultList)[2:-2]                      #To work with the ID, I'm removing the [' and the '].
     return resultList
+
+def get_parish_page_key(client:Client, db_id:str, parish_id:str):
+    filter = {
+        "property": "ParishID",
+        "rich_text": {"equals": parish_id}
+    }
+    return findPageID(client, db_id, filter)
+
+def get_parish_page_key_by_name(client:Client, db_id:str, parishName:str):
+    filter = {
+        "property": "Name",
+        "title": {"equals": parishName}
+    }
+    return findPageID(client, db_id, filter)
+
 
 def updateContent(parishKey, newText):
     notion.pages.update(
@@ -109,6 +123,34 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
     
     return results
 
+def get_text_property_json(text_content:str) -> dict:
+    """
+    Returns json usable for updates
+    """
+    return {
+        "rich_text": [
+            {
+                "text": {
+                    "content": text_content
+                }
+            }
+        ]
+    }
+
+def updateContent(client:Client, parishKey:str, updated_properties:dict):
+    client.pages.update(
+        page_id = parishKey,
+        properties = updated_properties
+    )
+
+def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], analysis_log:List[str]):
+    log_text = "\n".join(analysis_log)
+    parish_page_key = get_parish_page_key(client, db_id, parish_id)
+    updated_properties = {
+        "GPT Logs": get_text_property_json(log_text)
+    }
+    updateContent(client, parish_page_key, updated_properties)
+
 
 if __name__ == "__main__":
     from rich import print
@@ -123,14 +165,17 @@ if __name__ == "__main__":
             print("Doesn't look like you selected anything. Try again\n")
             pass
         else:
-            selectedID = findPageID(selectParish)
+            selectedID = get_parish_page_key_by_name(client, database_id, selectParish)
             if selectedID == '':
                 print ("Not a valid parish. Try again\n")
                 pass
             else:
                 print("\nThe pageID for " + selectParish + " is " + str(selectedID))
-                updateText = input("\nType something to put in the 'notes' column for this parish: ")
-                updateContent(selectedID, updateText)
+                updateText = input("\nType something to put in the 'GPT Logs' column for this parish: ")
+                updated_properties = {
+                    "GPT Logs": get_text_property_json(updateText)
+                }
+                updateContent(client, selectedID, updated_properties)
                 print("\nGot it! Check the database.")
                 break
         # print(selectedID == ['b665cd6a-b72c-49f7-a9be-67ddf941e846'])
