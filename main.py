@@ -36,7 +36,7 @@ def get_config():
     return argparse.Namespace(**config)
 
 
-def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
+def run_parish(parish_id:str, bulletin_publisher:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
 
     # Tiny not-great logging utility
     analysis_log = []
@@ -49,7 +49,7 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
     log("Process start.", console=True)
 
     with TemporaryFile('w+b') as temp_file:
-        url = download_bulletin(parish_id, temp_file)
+        url = download_bulletin(parish_id, temp_file, bulletin_publisher)
         log("Downloaded bulletin.", console=True)
 
         openai_client = Client()
