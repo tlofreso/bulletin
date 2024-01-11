@@ -25,6 +25,9 @@ def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
         response = httpx.get(url)
         time.sleep(30)
     for i in range(30):
+        if success:
+            break
+
         date_to_check = current_date - timedelta(days=i)
         if publisher_type == "PO": 
             filename = date_to_check.strftime(PARISHES_ONLINE_FILE_FORMAT)
@@ -45,6 +48,8 @@ def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
 
     if not success:
         raise Exception("No bulletin found")
+
+    return url
 
 if __name__ == "__main__":
     import tempfile

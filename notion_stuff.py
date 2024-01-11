@@ -1,3 +1,4 @@
+from datetime import date
 import json
 import os
 from typing import List
@@ -19,6 +20,7 @@ class ParishRow(BaseModel):
     name:str
     enabled:bool
     parish_id:str
+    last_run_timestamp:date
 
 
 def createParish(parishName):
@@ -49,8 +51,10 @@ def findPageID(client:Client, db_id:str, filter:dict):
         }
     )
     resultList = [i["id"] for i in response['results']]     #Coming out of the list, the key is ['hash-code-here']
-    resultList = str(resultList)[2:-2]                      #To work with the ID, I'm removing the [' and the '].
-    return resultList
+    if len(resultList) != 1:
+        raise Exception(f"Didn't find a unique page for {filter}!")
+    #resultList = str(resultList)[2:-2]                      #To work with the ID, I'm removing the [' and the '].
+    return resultList[0]
 
 def get_parish_page_key(client:Client, db_id:str, parish_id:str):
     filter = {
@@ -92,8 +96,8 @@ def get_row_property_value(row, attribute_name):
         if len(property[property_type]) > 0:
             value = property[property_type][0]["plain_text"]
         return value
-    elif property_type == "checkbox":
-        return property["checkbox"]
+    elif property_type in ["checkbox", "url"]:
+        return property[property_type]
 
     raise Exception("did not understand property with type " + property_type)
 
@@ -111,10 +115,15 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
 
     results = []
     for row in response["results"]:
+        #print(row)
+        last_run_timestamp_str = get_row_property_value(row, "GPT Timestamp")
+        if len(last_run_timestamp_str.strip()) == 0:
+            last_run_timestamp_str = "1980-01-01"
         results.append(ParishRow(
             name      = get_row_property_value(row, "Name"),
             enabled   = get_row_property_value(row, "Enable"),
             parish_id = get_row_property_value(row, "ParishID"),
+            last_run_timestamp = date.fromisoformat(last_run_timestamp_str)
         ))
 
 
@@ -138,19 +147,30 @@ def get_text_property_json(text_content:str) -> dict:
         ]
     }
 
+def get_url_property_json(url:str) -> dict:
+    """
+    Returns json usable for updates
+    """
+    return {
+        "url": url
+    }
+
 def updateContent(client:Client, parishKey:str, updated_properties:dict):
     client.pages.update(
         page_id = parishKey,
         properties = updated_properties
     )
 
-def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], analysis_log:List[str]):
+def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], bulletin_url:str, analysis_log:List[str]):
     log_text = "\n".join(analysis_log)
     result_text = json.dumps([m.model_dump() for m in mass_times])
     parish_page_key = get_parish_page_key(client, db_id, parish_id)
+    timestamp = date.today().isoformat()
     updated_properties = {
         "GPT Logs": get_text_property_json(log_text),
-        "GPT Results": get_text_property_json(result_text)
+        "GPT Results": get_text_property_json(result_text),
+        "Link to latest bulletin": get_url_property_json(bulletin_url),
+        "GPT Timestamp": get_text_property_json(timestamp),
     }
     updateContent(client, parish_page_key, updated_properties)
 
