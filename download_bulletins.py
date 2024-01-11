@@ -30,6 +30,7 @@ def download_bulletin(parish_id:str, file:IO[bytes]):
 
         #print(response.content)
         file.write(response.content)
+        print(f"Downloaded {url} for {parish_id}")
         success = True
 
     if not success:

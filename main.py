@@ -1,4 +1,5 @@
 import argparse
+from datetime import date, timedelta
 import os
 import sys
 from tempfile import TemporaryFile
@@ -14,7 +15,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description='Update parish mass times in the Notion DB.')
 
     parser.add_argument('-d', '--dry-run', action='store_true', help='Dry run: downloads bulletins but does not update the database')
-    parser.add_argument('-a', '--all', action='store_true', help='Runs against all enabled parishes')
+    parser.add_argument('-a', '--all', action='store_true', help='Runs against all enabled parishes with expired data')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose')
     parser.add_argument('parish_ids', nargs='*', help='ID(s) of the parish(es) to be checked')
 
@@ -85,9 +86,10 @@ def main():
 
     parish_ids_to_run = args.parish_ids
     if args.all:
-        print("Running against all enabled parishes...")
+        print("Running against all enabled parishes with old data...")
         all_parishes = get_all_parishes(notion_client, config.parish_db_id)
-        parishes_to_run = [p for p in all_parishes if p.enabled]
+        expiration_date = date.today() - timedelta(days=7)
+        parishes_to_run = [p for p in all_parishes if p.enabled and p.last_run_timestamp < expiration_date]
         if args.verbose:
             print(f"Found the following {len(parishes_to_run)} enabled parishes:")
             for p in parishes_to_run:
