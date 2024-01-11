@@ -20,6 +20,7 @@ class ParishRow(BaseModel):
     name:str
     enabled:bool
     parish_id:str
+    bulletin_publisher:str
     last_run_timestamp:date
 
 
@@ -120,10 +121,11 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
         if len(last_run_timestamp_str.strip()) == 0:
             last_run_timestamp_str = "1980-01-01"
         results.append(ParishRow(
-            name      = get_row_property_value(row, "Name"),
-            enabled   = get_row_property_value(row, "Enable"),
-            parish_id = get_row_property_value(row, "ParishID"),
-            last_run_timestamp = date.fromisoformat(last_run_timestamp_str)
+            name                = get_row_property_value(row, "Name"),
+            enabled             = get_row_property_value(row, "Enable"),
+            parish_id           = get_row_property_value(row, "ParishID"),
+            bulletin_publisher  = get_row_property_value(row, "Bulletin Publisher"),
+            last_run_timestamp  = date.fromisoformat(last_run_timestamp_str)
         ))
 
 
