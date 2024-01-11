@@ -3,6 +3,7 @@ from time import sleep
 from typing import List, IO
 
 from pydantic import BaseModel
+import PyPDF2
 
 from openai import Client
 
@@ -68,6 +69,10 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
     response_json = json.loads(json_str)
     response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]
     return response_masstimes
+
+def count_pages(pdf:IO[bytes]) -> int:
+    reader = PyPDF2.PdfReader(pdf)
+    return len(reader.pages)
 
 if __name__ == '__main__':
     # Test code

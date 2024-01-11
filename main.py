@@ -5,7 +5,7 @@ import sys
 from tempfile import TemporaryFile
 
 from download_bulletins import download_bulletin
-from info_extract import get_mass_times
+from info_extract import get_mass_times, count_pages
 from notion_stuff import get_notion_client_from_environment, get_all_parishes, upload_parish_analysis
 from openai import Client
 from rich import print
@@ -50,10 +50,14 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
 
     with TemporaryFile('w+b') as temp_file:
         url = download_bulletin(parish_id, temp_file)
+        temp_file.seek(0)
         log("Downloaded bulletin.", console=True)
 
-        openai_client = Client()
+        page_count = count_pages(temp_file)
         temp_file.seek(0)
+        log(f"Counted {page_count} pages in this PDF", console=True)
+
+        openai_client = Client()
         mass_times = get_mass_times(openai_client, config.bulletin_assistant_id, temp_file)
         log(f"Extracted {len(mass_times)} mass times.", console=True)
 
