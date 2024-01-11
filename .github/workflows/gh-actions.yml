@@ -1,6 +1,9 @@
 name: Mass time runner
 run-name: Extract masstimes from parish bulletins ⛪️
-on: [push, workflow_dispatch]
+on:
+  schedule:
+    - cron: '0 14 * * SAT'
+  workflow_dispatch:
 env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
   BULLETIN_ASSISTANT_ID: ${{ secrets.BULLETIN_ASSISTANT_ID }}
