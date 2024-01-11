@@ -57,6 +57,11 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
     client.files.delete(uploaded_bulletin.id)
     client.beta.threads.delete(thread.id)
 
+    #print(messages)
+    response_role = messages.data[0].role
+    if response_role == "user":
+        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
+
     response_string = messages.data[0].content[0].text.value
     #print(response_string)
     json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
