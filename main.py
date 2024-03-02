@@ -2,11 +2,12 @@ import argparse
 from datetime import date, timedelta
 import os
 import sys
+import time
 from tempfile import TemporaryFile
 
 from download_bulletins import download_bulletin
 from info_extract import get_mass_times, count_pages
-from notion_stuff import get_notion_client_from_environment, get_all_parishes, upload_parish_analysis
+from notion_stuff import get_notion_client_from_environment, get_all_parishes, get_individual_parish, upload_parish_analysis
 from openai import Client
 from rich import print
 
@@ -36,7 +37,7 @@ def get_config():
     return argparse.Namespace(**config)
 
 
-def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
+def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
 
     # Tiny not-great logging utility
     analysis_log = []
@@ -49,9 +50,18 @@ def run_parish(parish_id:str, config:argparse.Namespace, dry_run:bool=False, ver
     log("Process start.", console=True)
 
     with TemporaryFile('w+b') as temp_file:
-        url = download_bulletin(parish_id, temp_file)
+        if publisher in ["Parishes Online"]: 
+            url = download_bulletin(parish_id, temp_file, "PO")
+        if publisher in ["Discover Mass"]:
+            url = download_bulletin(parish_id, temp_file, "DM")
+            log("Brief delay to prevent a lockout", console=True)
+            time.sleep(30)
+        if publisher in ["eCatholic"]:
+            url = download_bulletin(parish_id, temp_file, "EC")
+        if publisher in ["Other"]:
+            return      #There's no code to process "other" bulletins yet"
         temp_file.seek(0)
-        log("Downloaded bulletin.", console=True)
+        log(f"Downloaded bulletin from {publisher}.", console=True)
 
         page_count = count_pages(temp_file)
         temp_file.seek(0)
@@ -104,8 +114,17 @@ def main():
     if len(parish_ids_to_run) == 0:
         sys.exit(f"Error: No parishes specified or none found enabled in DB. Use -a or positional arguments to specify parishes")
 
-    for parish_id in parish_ids_to_run:
-        run_parish(parish_id, config, args.dry_run, args.verbose)
+    if not args.all:
+        print("Running against the requested parish ID, *regardless* of it is enabled or out of date")
+        single_parish = get_individual_parish(notion_client, config.parish_db_id, args.parish_ids[0])
+        expiration_date = date.today() - timedelta(days=7)
+        parishes_to_run = [p for p in single_parish]
+        parish_ids_to_run = [p.parish_id for p in parishes_to_run]
+
+    for parish in parishes_to_run:
+        run_parish(parish.parish_id, parish.publisher, config, args.dry_run, args.verbose)
+#    for parish_id in parish_ids_to_run:
+#        run_parish(parish_id, config, args.dry_run, args.verbose)
 
 if __name__ == "__main__":
     main()

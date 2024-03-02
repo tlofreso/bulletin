@@ -21,6 +21,7 @@ class ParishRow(BaseModel):
     enabled:bool
     parish_id:str
     last_run_timestamp:date
+    publisher:str
 
 
 def createParish(parishName):
@@ -98,7 +99,12 @@ def get_row_property_value(row, attribute_name):
         return value
     elif property_type in ["checkbox", "url"]:
         return property[property_type]
-
+    elif property_type in ["select"]:
+        value = ""
+        if property[property_type]:
+            value = property[property_type]["name"]
+        return value
+    
     raise Exception("did not understand property with type " + property_type)
 
 def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[ParishRow]:
@@ -123,13 +129,40 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
             name      = get_row_property_value(row, "Name"),
             enabled   = get_row_property_value(row, "Enable"),
             parish_id = get_row_property_value(row, "ParishID"),
-            last_run_timestamp = date.fromisoformat(last_run_timestamp_str)
+            last_run_timestamp = date.fromisoformat(last_run_timestamp_str),
+            publisher = get_row_property_value(row, "Bulletin Publisher")
         ))
 
 
     # pagination via recursion isn't probably a perfect idea, but I'm lazy
     if response["has_more"] == True:
         results.extend(get_all_parishes(client, database_id, cursor=response["next_cursor"]))
+    
+    return results
+
+def get_individual_parish(client:Client, database_id:str, parish_id:str, cursor=None) -> List[ParishRow]:
+    """
+    Gets a representation of one requested Parish from the DB.
+    """
+    if cursor == None:
+        response = client.databases.query(**{"database_id": database_id, "filter": { "property": "ParishID", "rich_text": {"contains": parish_id,},},})
+        
+    else:
+        response = client.databases.query(database_id, start_cursor=cursor)
+
+    results = []
+    for row in response["results"]:
+        #print(row)
+        last_run_timestamp_str = get_row_property_value(row, "GPT Timestamp")
+        if len(last_run_timestamp_str.strip()) == 0:
+            last_run_timestamp_str = "1980-01-01"
+        results.append(ParishRow(
+            name      = get_row_property_value(row, "Name"),
+            enabled   = get_row_property_value(row, "Enable"),
+            parish_id = get_row_property_value(row, "ParishID"),
+            last_run_timestamp = date.fromisoformat(last_run_timestamp_str),
+            publisher = get_row_property_value(row, "Bulletin Publisher")
+        ))
     
     return results
 

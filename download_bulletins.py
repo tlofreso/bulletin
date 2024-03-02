@@ -2,7 +2,6 @@ from datetime import datetime, timedelta
 import httpx
 from typing import IO
 from dm_find_url import get_dm_url
-import time
 
 PARISHES_ONLINE_ROOT = "https://container.parishesonline.com/bulletins/14"
 PARISHES_ONLINE_FILE_FORMAT = "%Y%m%dB.pdf"
@@ -23,7 +22,6 @@ def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
     if publisher_type == "DM":
         url = get_dm_url(parish_id)
         response = httpx.get(url)
-        time.sleep(30)
     for i in range(30):
         if success:
             break
