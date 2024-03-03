@@ -45,6 +45,7 @@ def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
         #print(response.content)
 
     if not success:
+	print (response.status_code)
         raise Exception("No bulletin found")
 
     return url
