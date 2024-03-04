@@ -70,6 +70,9 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, dry_run:
         openai_client = Client()
         mass_times = get_mass_times(openai_client, config.bulletin_assistant_id, temp_file)
         log(f"Extracted {len(mass_times)} mass times.", console=True)
+        if len(mass_times) == 0:
+            dry_run = True
+            log(f"Because nothing was found, nothing will be updated.", console=True)
 
         for mass_time in mass_times:
             log(f"Found mass {mass_time}", console=verbose)

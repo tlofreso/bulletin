@@ -39,11 +39,14 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
         role="user",
         file_ids=[uploaded_bulletin.id]
     )
-
-    run = client.beta.threads.runs.create(
-        thread_id=thread.id,
-        assistant_id=assistant.id
-    )
+    try:
+        run = client.beta.threads.runs.create(
+            thread_id=thread.id,
+            assistant_id=assistant.id
+        )
+    except:
+        print(f"OpenAI wasn't able to process the bulletin pdf/tempfile for some reason - skipping")
+        return ""
 
     while run.status in ["queued", "in_progress", "cancelling"]:
         #print(run.status)
@@ -58,21 +61,31 @@ def get_mass_times(client:Client, assistant_id:str, bulletin_pdf:IO[bytes]) -> L
     client.files.delete(uploaded_bulletin.id)
     client.beta.threads.delete(thread.id)
 
-    #print(messages)
+#    print(messages.data[0].content[0].text.value)
     response_role = messages.data[0].role
     if response_role == "user":
-        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
+#        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
+        print(f"Last message in the thread is not from the assistant. Perhaps a usage limit issue? No response at all?")
+        return ""
 
     response_string = messages.data[0].content[0].text.value
     #print(response_string)
     json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
-    response_json = json.loads(json_str)
-    response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]
-    return response_masstimes
+    try:
+        response_json = json.loads(json_str)
+        response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]
+        return response_masstimes
+    except ValueError:
+        print(f'Something is wrong with the following JSON: {json_str}')
+        return ""
 
 def count_pages(pdf:IO[bytes]) -> int:
-    reader = PyPDF2.PdfReader(pdf)
-    return len(reader.pages)
+    try:
+        reader = PyPDF2.PdfReader(pdf)
+        return len(reader.pages)
+    except:
+        print("PDF issue - Did you hit a usage cap?")
+        return "0"
 
 if __name__ == '__main__':
     # Test code
