@@ -6,7 +6,7 @@ from typing import List
 from notion_client import Client
 from pydantic import BaseModel
 
-from info_extract import MassTime
+from info_extract import MassTime, ConfessionTime
 
 database_id = "00f6fa861276497580fbf6ef48bc53e9"
 
@@ -194,14 +194,16 @@ def updateContent(client:Client, parishKey:str, updated_properties:dict):
         properties = updated_properties
     )
 
-def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], bulletin_url:str, analysis_log:List[str]):
+def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[MassTime], conf_times:List[ConfessionTime], bulletin_url:str, analysis_log:List[str]):
     log_text = "\n".join(analysis_log)
-    result_text = json.dumps([m.model_dump() for m in mass_times])
     parish_page_key = get_parish_page_key(client, db_id, parish_id)
+    mass_result_text = json.dumps([m.model_dump() for m in mass_times])
+    conf_result_text = json.dumps([c.model_dump() for c in conf_times])
     timestamp = date.today().isoformat()
     updated_properties = {
         "GPT Logs": get_text_property_json(log_text),
-        "GPT Results": get_text_property_json(result_text),
+        "GPT Results": get_text_property_json(mass_result_text),
+        "Confession Testing": get_text_property_json(conf_result_text),
         "Link to latest bulletin": get_url_property_json(bulletin_url),
         "GPT Timestamp": get_text_property_json(timestamp),
     }
