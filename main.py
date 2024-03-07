@@ -18,7 +18,8 @@ def parse_arguments():
     parser.add_argument('-d', '--dry-run', action='store_true', help='Dry run: downloads bulletins but does not update the database')
     parser.add_argument('-a', '--all', action='store_true', help='Runs against all enabled parishes with expired data')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose')
-    parser.add_argument('-c', '--confession', action='store_true', help='Search for Confession Times instead')
+    parser.add_argument('-m', '--mass', action='store_true', help='Search for Mass Times')
+    parser.add_argument('-c', '--confession', action='store_true', help='Search for Confession Times')
     parser.add_argument('parish_ids', nargs='*', help='ID(s) of the parish(es) to be checked')
 
     return parser.parse_args()
@@ -38,7 +39,7 @@ def get_config():
     return argparse.Namespace(**config)
 
 
-def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, confession:bool=False, dry_run:bool=False, verbose:bool=False):
+def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:bool=False, confession:bool=False, dry_run:bool=False, verbose:bool=False):
 
     # Tiny not-great logging utility
     analysis_log = []
@@ -69,27 +70,31 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, confessi
         log(f"Counted {page_count} pages in this PDF", console=True)
 
         openai_client = Client()
-        if not confession:
+        if mass:
             mass_times = get_times(openai_client, config.bulletin_assistant_id, "mass", temp_file)
             log(f"Extracted {len(mass_times)} mass times.", console=True)
             if len(mass_times) == 0:
-                dry_run = True
-                log(f"Because nothing was found, nothing will be updated.", console=True)
+                log(f"Because no masses were found, they will not be updated.", console=True)
 
             for mass_time in mass_times:
                 log(f"Found mass {mass_time}", console=verbose)
         else:
+            mass_times = ""
+
+        if confession:
             confession_times = get_times(openai_client, config.bulletin_assistant_id, "conf", temp_file)
             log(f"Extracted {len(confession_times)} confession times.", console = True)
             if len(confession_times) == 0:
-                dry_run = True
-                log(f"because nothing was found, nothing will be updated.", console=True)
+                log(f"Because no confessions were found, they will not be updated.", console=True)
             
             for confession_time in confession_times:
                 log(f"Found confession at {confession_time}", console=verbose)
+        else:
+            confession_times = ""
 
         if dry_run:
             log(f"Dry run - skipping DB update.", console=True)
+
         else:
             notion_client = get_notion_client_from_environment()
             upload_parish_analysis(
@@ -114,6 +119,10 @@ def main():
     notion_client = get_notion_client_from_environment()
 
     parish_ids_to_run = args.parish_ids
+
+    if not args.mass and not args.confession:
+        sys.exit(f'Error: No data selected. As this serves no purpose, I will now quit. Try again with the -m and/or the -c operators')
+
     if args.all:
         print("Running against all enabled parishes with old data...")
         all_parishes = get_all_parishes(notion_client, config.parish_db_id)
@@ -137,7 +146,7 @@ def main():
         parish_ids_to_run = [p.parish_id for p in parishes_to_run]
 
     for parish in parishes_to_run:
-        run_parish(parish.parish_id, parish.publisher, config, args.confession, args.dry_run, args.verbose)
+        run_parish(parish.parish_id, parish.publisher, config, args.mass, args.confession, args.dry_run, args.verbose)
 #    for parish_id in parish_ids_to_run:
 #        run_parish(parish_id, config, args.dry_run, args.verbose)
 

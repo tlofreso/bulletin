@@ -202,11 +202,13 @@ def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[
     timestamp = date.today().isoformat()
     updated_properties = {
         "GPT Logs": get_text_property_json(log_text),
-        "GPT Results": get_text_property_json(mass_result_text),
-        "Confession Testing": get_text_property_json(conf_result_text),
         "Link to latest bulletin": get_url_property_json(bulletin_url),
         "GPT Timestamp": get_text_property_json(timestamp),
     }
+    if mass_times:
+        updated_properties["GPT Results"] = get_text_property_json(mass_result_text)
+    if conf_times:
+        updated_properties["Confession Testing"] = get_text_property_json(conf_result_text)
     updateContent(client, parish_page_key, updated_properties)
 
 
