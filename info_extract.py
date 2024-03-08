@@ -36,6 +36,22 @@ Example Response:
 Do not include any content in the response other than the JSON itself.
 """
 
+ADORATION_PROMPT = """When is Eucharistic Adoration held at this parish? Provide output as a valid JSON array in which every object in the array represents a single adoration time.  Include attributes for if it is 24 hours, the day of the week, the time of day, and its duration.  The "day" attribute should be the name of the day, and the "time" attribute should be an int representing 24hr time.  (900 is 9am, 1400 is 2pm, etc.) The "duration" attribute should be an int representing the number of minutes between the start and end of adoration (for example, if adoration goes from 3:00pm to 4:00pm, the duration would be 60).
+If it appears adoration is held all fo the time, for 24 hours a day, or "perpetually", then set the "is24hour" attribute to True, "day" attribute to all, and the rest of the attributes to 0. If there is no adoration at this parish, then set the "is24hour" attribute to false, "day" to "none", and time and duration to 0.
+
+Example Response:
+[
+ {
+    "is24hour": False,
+    "day": "Saturday",
+    "time": 1500,
+    "duration": 60 
+ }
+]
+
+Do not include any content in the response other than the JSON itself.
+"""
+
 class MassTime(BaseModel):
     day: str  # "Monday"
     time: int # 1630 is 4:30pm. All times local
@@ -44,6 +60,12 @@ class ConfessionTime(BaseModel):
     day: str # "Saturday"
     time: int # 1500 is 3:00pm. All times local
     duration: int # Number of minutes confession runs for
+
+class AdorationTime(BaseModel):
+    is24hour: bool # True
+    day: str # "Tuesday"
+    time: int # 800 is 8am. All times local.
+    duration: int #Number of minutes for adoration
 
 def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[bytes]) -> List[MassTime]:
     assistant = client.beta.assistants.retrieve(assistant_id)
@@ -64,6 +86,13 @@ def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[byt
         client.beta.threads.messages.create(
             thread_id=thread.id, 
             content=CONFESSIONTIME_PROMPT,
+            role="user",
+            file_ids=[uploaded_bulletin.id]
+        )        
+    if activity in ["adore"]:   
+        client.beta.threads.messages.create(
+            thread_id=thread.id, 
+            content=ADORATION_PROMPT,
             role="user",
             file_ids=[uploaded_bulletin.id]
         )        
@@ -106,7 +135,10 @@ def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[byt
             return response_masstimes
         if activity in ["conf"]:
             response_confessiontimes = [ConfessionTime.model_validate_json(json.dumps(j)) for j in response_json]
-            return response_confessiontimes    
+            return response_confessiontimes 
+        if activity in ["adore"]:
+            response_adorationtimes = [AdorationTime.model_validate_json(json.dumps(a)) for a in response_json]
+            return response_adorationtimes
     except ValueError:
         print(f'Something went wrong parsing the JSON: {json_str}')
         print(f'The OpenAI response might be helpful: {response_string}')
@@ -127,12 +159,12 @@ if __name__ == '__main__':
     from download_bulletins import download_bulletin
 
     with TemporaryFile("w+b") as bulletin_file:
-        download_bulletin("0689", bulletin_file)
+        download_bulletin("our-lady-of-mount-carmel-wickliffe-oh", bulletin_file, "DM")
 
         client = Client()
         assistant_id = environ["BULLETIN_ASSISTANT_ID"]
 
-        mass_times = get_times(client, assistant_id, "mass", bulletin_file)
+        mass_times = get_times(client, assistant_id, "adore", bulletin_file)
 
         for mass_time in mass_times:
             print(mass_time)

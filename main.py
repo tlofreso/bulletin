@@ -20,6 +20,7 @@ def parse_arguments():
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose')
     parser.add_argument('-m', '--mass', action='store_true', help='Search for Mass Times')
     parser.add_argument('-c', '--confession', action='store_true', help='Search for Confession Times')
+    parser.add_argument('-e', '--adoration', action='store_true', help='Search for Adoration Times')
     parser.add_argument('parish_ids', nargs='*', help='ID(s) of the parish(es) to be checked')
 
     return parser.parse_args()
@@ -39,7 +40,7 @@ def get_config():
     return argparse.Namespace(**config)
 
 
-def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:bool=False, confession:bool=False, dry_run:bool=False, verbose:bool=False):
+def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:bool=False, confession:bool=False, adoration:bool=False, dry_run:bool=False, verbose:bool=False):
 
     # Tiny not-great logging utility
     analysis_log = []
@@ -92,6 +93,17 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
         else:
             confession_times = ""
 
+        if adoration:
+            adoration_times = get_times(openai_client, config.bulletin_assistant_id, "adore", temp_file)
+            log(f"Extracted {len(adoration_times)} adoration times.", console=True)
+            if len(adoration_times) == 0:
+                log(f"Because no adoration was found, this will not be updated.", console=True)
+            
+            for adoration_time in adoration_times:
+                log(f"Found adoration at {adoration_time}", console=verbose)
+        else:
+            adoration_times = ""
+
         if dry_run:
             log(f"Dry run - skipping DB update.", console=True)
 
@@ -102,7 +114,8 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
                 config.parish_db_id, 
                 parish_id, 
                 mass_times,
-                confession_times, 
+                confession_times,
+                adoration_times, 
                 url,
                 analysis_log
             )
@@ -120,7 +133,7 @@ def main():
 
     parish_ids_to_run = args.parish_ids
 
-    if not args.mass and not args.confession:
+    if not args.mass and not args.confession and not args.adoration:
         sys.exit(f'Error: No data selected. As this serves no purpose, I will now quit. Try again with the -m and/or the -c operators')
 
     if args.all:
@@ -146,9 +159,7 @@ def main():
         parish_ids_to_run = [p.parish_id for p in parishes_to_run]
 
     for parish in parishes_to_run:
-        run_parish(parish.parish_id, parish.publisher, config, args.mass, args.confession, args.dry_run, args.verbose)
-#    for parish_id in parish_ids_to_run:
-#        run_parish(parish_id, config, args.dry_run, args.verbose)
+        run_parish(parish.parish_id, parish.publisher, config, args.mass, args.confession, args.adoration, args.dry_run, args.verbose)
 
 if __name__ == "__main__":
     main()
