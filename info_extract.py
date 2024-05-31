@@ -37,12 +37,12 @@ Do not include any content in the response other than the JSON itself.
 """
 
 ADORATION_PROMPT = """When is Eucharistic Adoration held at this parish? Provide output as a valid JSON array in which every object in the array represents a single adoration time.  Include attributes for if it is 24 hours, the day of the week, the time of day, and its duration.  The "day" attribute should be the name of the day, and the "time" attribute should be an int representing 24hr time.  (900 is 9am, 1400 is 2pm, etc.) The "duration" attribute should be an int representing the number of minutes between the start and end of adoration (for example, if adoration goes from 3:00pm to 4:00pm, the duration would be 60).
-If it appears adoration is held all fo the time, for 24 hours a day, or "perpetually", then set the "is24hour" attribute to True, "day" attribute to all, and the rest of the attributes to 0. If there is no adoration at this parish, then set the "is24hour" attribute to false, "day" to "none", and time and duration to 0.
+If it appears adoration is held all fo the time, for 24 hours a day, or "perpetually", then set the "is24hour" attribute to the boolean true, "day" attribute to all, and the rest of the attributes to 0. If there is no adoration at this parish, then set the "is24hour" attribute to the boolean false, "day" to "none", and time and duration to 0.
 
 Example Response:
 [
  {
-    "is24hour": False,
+    "is24hour": false,
     "day": "Saturday",
     "time": 1500,
     "duration": 60 
