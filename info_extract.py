@@ -96,14 +96,14 @@ def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[byt
             role="user",
             file_ids=[uploaded_bulletin.id]
         )        
-    #try:
-    run = client.beta.threads.runs.create(
-        thread_id=thread.id,
-        assistant_id=assistant.id
-    )
-#    except:
-#        print(f"OpenAI wasn't able to process the bulletin pdf/tempfile for some reason - skipping")
-#        return ""
+    try:
+        run = client.beta.threads.runs.create(
+            thread_id=thread.id,
+            assistant_id=assistant.id
+        )
+    except:
+        print(f"OpenAI wasn't able to process the bulletin pdf/tempfile for some reason - skipping")
+        return ""
 
     while run.status in ["queued", "in_progress", "cancelling"]:
         #print(run.status)
@@ -123,6 +123,7 @@ def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[byt
     if response_role == "user":
 #        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
         print(f"Last message in the thread is not from the assistant. Perhaps a usage limit issue? No response at all?")
+        print(messages.data[0].content[0].text.value)
         return ""
 
     response_string = messages.data[0].content[0].text.value
