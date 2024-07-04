@@ -7,7 +7,7 @@ PARISHES_ONLINE_ROOT = "https://container.parishesonline.com/bulletins/14"
 PARISHES_ONLINE_FILE_FORMAT = "%Y%m%dB.pdf"
 ECATHOLIC_ONLINE_ROOT = "https://files.ecatholic.com"
 ECATHOLIC_ONLINE_FILE_FORMAT = "%Y%m%d.pdf"
-DAYS_TO_LOOK_BEFORE_GIVING_UP = 30
+DAYS_TO_LOOK_BEFORE_GIVING_UP = 30 
 
 def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
     """
@@ -25,7 +25,6 @@ def download_bulletin(parish_id:str, file:IO[bytes], publisher_type="PO"):
     for i in range(30):
         if success:
             break
-
         date_to_check = current_date - timedelta(days=i)
         if publisher_type == "PO": 
             filename = date_to_check.strftime(PARISHES_ONLINE_FILE_FORMAT)

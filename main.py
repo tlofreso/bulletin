@@ -3,10 +3,10 @@ from datetime import date, timedelta
 import os
 import sys
 import time
-from tempfile import TemporaryFile
+from tempfile import TemporaryFile, NamedTemporaryFile
 
 from download_bulletins import download_bulletin
-from info_extract import get_mass_times, count_pages
+from info_extract import get_times, count_pages
 from notion_stuff import get_notion_client_from_environment, get_all_parishes, get_individual_parish, upload_parish_analysis
 from openai import Client
 from rich import print
@@ -18,6 +18,9 @@ def parse_arguments():
     parser.add_argument('-d', '--dry-run', action='store_true', help='Dry run: downloads bulletins but does not update the database')
     parser.add_argument('-a', '--all', action='store_true', help='Runs against all enabled parishes with expired data')
     parser.add_argument('-v', '--verbose', action='store_true', help='Verbose')
+    parser.add_argument('-m', '--mass', action='store_true', help='Search for Mass Times')
+    parser.add_argument('-c', '--confession', action='store_true', help='Search for Confession Times')
+    parser.add_argument('-e', '--adoration', action='store_true', help='Search for Adoration Times')
     parser.add_argument('parish_ids', nargs='*', help='ID(s) of the parish(es) to be checked')
 
     return parser.parse_args()
@@ -37,7 +40,7 @@ def get_config():
     return argparse.Namespace(**config)
 
 
-def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, dry_run:bool=False, verbose:bool=False):
+def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:bool=False, confession:bool=False, adoration:bool=False, dry_run:bool=False, verbose:bool=False):
 
     # Tiny not-great logging utility
     analysis_log = []
@@ -67,25 +70,64 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, dry_run:
         temp_file.seek(0)
         log(f"Counted {page_count} pages in this PDF", console=True)
 
+### TO DO ###
+### main.py
+###
+### Combine all 3 activities into one request, use an array (events = get_times(... ['mass', 'adoration', 'confession']))
+### Filter out via json, sort into mass_times, etc. And do all of the logic.
+###     e.g. mass_times = json.loads(events){mass} or however json works
+###
+### info_extract.py
+###
+### Implement a for loop
+### Can I resume a run?
+### Only delete bulletin file remotely after I'm done with it
+### Adjust event logic & checking
         openai_client = Client()
-        mass_times = get_mass_times(openai_client, config.bulletin_assistant_id, temp_file)
+
+        activities_to_get = []
+        if mass:
+            activities_to_get.append("mass") 
+        if confession:
+            activities_to_get.append("conf") 
+        if adoration:
+            activities_to_get.append("adore")
+
+        mass_times, confession_times, adoration_times = get_times(openai_client, config.bulletin_assistant_id, activities_to_get, temp_file)
+
         log(f"Extracted {len(mass_times)} mass times.", console=True)
+        log(f"Extracted {len(confession_times)} confession times.", console=True)
+        log(f"Extracted {len(adoration_times)} adoration times.", console=True)
         if len(mass_times) == 0:
-            dry_run = True
-            log(f"Because nothing was found, nothing will be updated.", console=True)
+            log(f"Because no masses were found, they will not be updated.", console=True)
 
         for mass_time in mass_times:
-            log(f"Found mass {mass_time}", console=verbose)
+                log(f"Found mass {mass_time}", console=verbose)
+
+        if len(confession_times) == 0:
+            log(f"Because no confessions were found, they will not be updated.", console=True)
+        
+        for confession_time in confession_times:
+            log(f"Found confession at {confession_time}", console=verbose)
+
+        if len(adoration_times) == 0:
+            log(f"Because no adoration was found, this will not be updated.", console=True)
+        
+        for adoration_time in adoration_times:
+            log(f"Found adoration at {adoration_time}", console=verbose)
 
         if dry_run:
             log(f"Dry run - skipping DB update.", console=True)
+
         else:
             notion_client = get_notion_client_from_environment()
             upload_parish_analysis(
                 notion_client, 
                 config.parish_db_id, 
                 parish_id, 
-                mass_times, 
+                mass_times,
+                confession_times,
+                adoration_times, 
                 url,
                 analysis_log
             )
@@ -102,6 +144,10 @@ def main():
     notion_client = get_notion_client_from_environment()
 
     parish_ids_to_run = args.parish_ids
+
+    if not args.mass and not args.confession and not args.adoration:
+        sys.exit(f'Error: No data selected. As this serves no purpose, I will now quit. Try again with the -m and/or the -c operators')
+
     if args.all:
         print("Running against all enabled parishes with old data...")
         all_parishes = get_all_parishes(notion_client, config.parish_db_id)
@@ -125,9 +171,7 @@ def main():
         parish_ids_to_run = [p.parish_id for p in parishes_to_run]
 
     for parish in parishes_to_run:
-        run_parish(parish.parish_id, parish.publisher, config, args.dry_run, args.verbose)
-#    for parish_id in parish_ids_to_run:
-#        run_parish(parish_id, config, args.dry_run, args.verbose)
+        run_parish(parish.parish_id, parish.publisher, config, args.mass, args.confession, args.adoration, args.dry_run, args.verbose)
 
 if __name__ == "__main__":
     main()
