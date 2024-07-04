@@ -4,8 +4,10 @@ from typing import List, IO
 
 from pydantic import BaseModel
 import PyPDF2
+from tempfile import NamedTemporaryFile
 
-from openai import Client
+#from openai import Client
+import openai
 
 MASSTIME_PROMPT = """What are the regular Mass Times at this Parish?  Provide output as a valid JSON array in which every object in the array represents a single mass time.  Include attributes for the day of the week and the time of day.  The "day" attribute should be the name of the day, and the "time" attribute should be an int representing 24hr time.  (900 is 9am, 1400 is 2pm, etc.)
 
@@ -67,68 +69,90 @@ class AdorationTime(BaseModel):
     time: int # 800 is 8am. All times local.
     duration: int #Number of minutes for adoration
 
-def get_times(client:Client, assistant_id:str, activity:str, bulletin_pdf:IO[bytes]) -> List[MassTime]:
+def get_times(client: openai.Client, assistant_id:str, activity:str, bulletin_pdf:IO[bytes]) -> List[MassTime]:
     assistant = client.beta.assistants.retrieve(assistant_id)
-    uploaded_bulletin=client.files.create(
-        purpose="assistants",
-        file=bulletin_pdf
-    )
-
-    thread = client.beta.threads.create()
-    if activity in ["mass"]:   
-        client.beta.threads.messages.create(
-            thread_id=thread.id, 
-            content=MASSTIME_PROMPT,
-            role="user",
-            file_ids=[uploaded_bulletin.id]
+    with NamedTemporaryFile('w+b', suffix=".pdf") as bulletin_with_suffix:
+        bulletin_with_suffix.write(bulletin_pdf.read())
+        uploaded_bulletin=client.files.create(
+            purpose="assistants",
+            file=bulletin_with_suffix.file
         )
-    if activity in ["conf"]:   
-        client.beta.threads.messages.create(
-            thread_id=thread.id, 
-            content=CONFESSIONTIME_PROMPT,
-            role="user",
-            file_ids=[uploaded_bulletin.id]
-        )        
-    if activity in ["adore"]:   
-        client.beta.threads.messages.create(
-            thread_id=thread.id, 
-            content=ADORATION_PROMPT,
-            role="user",
-            file_ids=[uploaded_bulletin.id]
-        )        
+    thread = client.beta.threads.create()
+    client.beta.threads.messages.create(
+        thread_id=thread.id,
+        role="user",
+        content="Here is a parish bulletin. Analyze it, and prepare to answer questions about its contents.",
+        attachments=[
+            {
+            "file_id": uploaded_bulletin.id,
+            "tools": [{"type": "file_search"}]
+            }
+        ]
+    )
     try:
-        run = client.beta.threads.runs.create(
+        response = client.beta.threads.runs.create(
             thread_id=thread.id,
             assistant_id=assistant.id
         )
     except:
-        print(f"OpenAI wasn't able to process the bulletin pdf/tempfile for some reason - skipping")
-        return ""
+        raise
 
-    while run.status in ["queued", "in_progress", "cancelling"]:
-        #print(run.status)
-        sleep(2)
-        run = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=run.id)
-    #print(run.status)
+    for event in activity:
+        print(event)
+        if event in ["mass"]:
+            client.beta.threads.messages.update(content=MASSTIME_PROMPT)
+        if event in ["conf"]:
+            client.beta.threads.messages.update(content=CONFESSIONTIME_PROMPT)
+        if event in ["adore"]:
+            client.beta.threads.messages.update(content=ADORATION_PROMPT)
+        #client.beta.threads.runs.update(run_id=response.id)
+        while response.status in ["queued", "in_progress", "cancelling"]:
+            print(response.status)
+            sleep(2)
+            response = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=response.id)
+        messages_response = client.beta.threads.messages.list(thread_id=thread.id)
 
-    messages = client.beta.threads.messages.list(
-        thread_id=thread.id
-    )
+    #         thread_id=thread.id,
+    #         content=CONFESSIONTIME_PROMPT,
+    #         role="user",
+    #         attachments=[
+    #             {
+    #             "file_id": uploaded_bulletin.id,
+    #             "tools": [{"type": "file_search"}]
+    #             }
+    #         ]
+    #     )   
+    # if activity in ["adore"]:   
+    #     client.beta.threads.messages.create(
+    #         thread_id=thread.id,
+    #         content=ADORATION_PROMPT,
+    #         role="user",
+    #         attachments=[
+    #             {
+    #             "file_id": uploaded_bulletin.id,
+    #             "tools": [{"type": "file_search"}]
+    #             }
+    #         ]
+    #     )    
+
 
     client.files.delete(uploaded_bulletin.id)
     client.beta.threads.delete(thread.id)
 
-#    print(messages.data[0].content[0].text.value)
-    response_role = messages.data[0].role
+    response_role = messages_response.data[0].role
+    print(response_role)
+
+
     if response_role == "user":
 #        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
         print(f"Last message in the thread is not from the assistant. Perhaps a usage limit issue? No response at all?")
-        print(messages.data[0].content[0].text.value)
+        print(messages_response.data[0].content[0].text.value)
         return ""
 
-    response_string = messages.data[0].content[0].text.value
+    response_string = messages_response.data[0].content[0].text.value
 #    print(response_string)
     json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
+
     try:
         response_json = json.loads(json_str)
         if activity in ["mass"]:
@@ -162,7 +186,7 @@ if __name__ == '__main__':
     with TemporaryFile("w+b") as bulletin_file:
         download_bulletin("our-lady-of-mount-carmel-wickliffe-oh", bulletin_file, "DM")
 
-        client = Client()
+        client = openai.Client()
         assistant_id = environ["BULLETIN_ASSISTANT_ID"]
 
         mass_times = get_times(client, assistant_id, "adore", bulletin_file)

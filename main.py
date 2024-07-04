@@ -3,7 +3,7 @@ from datetime import date, timedelta
 import os
 import sys
 import time
-from tempfile import TemporaryFile
+from tempfile import TemporaryFile, NamedTemporaryFile
 
 from download_bulletins import download_bulletin
 from info_extract import get_times, count_pages
@@ -70,6 +70,19 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
         temp_file.seek(0)
         log(f"Counted {page_count} pages in this PDF", console=True)
 
+### TO DO ###
+### main.py
+###
+### Combine all 3 activities into one request, use an array (events = get_times(... ['mass', 'adoration', 'confession']))
+### Filter out via json, sort into mass_times, etc. And do all of the logic.
+###     e.g. mass_times = json.loads(events){mass} or however json works
+###
+### info_extract.py
+###
+### Implement a for loop
+### Can I resume a run?
+### Only delete bulletin file remotely after I'm done with it
+### Adjust event logic & checking
         openai_client = Client()
         if mass:
             mass_times = get_times(openai_client, config.bulletin_assistant_id, "mass", temp_file)
