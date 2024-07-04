@@ -31,7 +31,7 @@ Example Response:
  {
     "day": "Saturday",
     "time": 1500,
-    "duration": 60 
+    "duration": 60
  }
 ]
 
@@ -47,7 +47,7 @@ Example Response:
     "is24hour": false,
     "day": "Saturday",
     "time": 1500,
-    "duration": 60 
+    "duration": 60
  }
 ]
 
@@ -69,7 +69,8 @@ class AdorationTime(BaseModel):
     time: int # 800 is 8am. All times local.
     duration: int #Number of minutes for adoration
 
-def get_times(client: openai.Client, assistant_id:str, activity:str, bulletin_pdf:IO[bytes]) -> List[MassTime]:
+def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulletin_pdf:IO[bytes]) -> List[MassTime]:
+    response_masstimes, response_adorationtimes, response_confessiontimes = ([],[],[])
     assistant = client.beta.assistants.retrieve(assistant_id)
     with NamedTemporaryFile('w+b', suffix=".pdf") as bulletin_with_suffix:
         bulletin_with_suffix.write(bulletin_pdf.read())
@@ -77,40 +78,80 @@ def get_times(client: openai.Client, assistant_id:str, activity:str, bulletin_pd
             purpose="assistants",
             file=bulletin_with_suffix.file
         )
+
     thread = client.beta.threads.create()
-    client.beta.threads.messages.create(
-        thread_id=thread.id,
-        role="user",
-        content="Here is a parish bulletin. Analyze it, and prepare to answer questions about its contents.",
-        attachments=[
-            {
-            "file_id": uploaded_bulletin.id,
-            "tools": [{"type": "file_search"}]
-            }
-        ]
-    )
-    try:
-        response = client.beta.threads.runs.create(
-            thread_id=thread.id,
-            assistant_id=assistant.id
-        )
-    except:
-        raise
+    # client.beta.threads.messages.create(
+    #     thread_id=thread.id,
+    #     role="user",
+    #     content="Here is a parish bulletin. Analyze it, and prepare to answer questions about its contents.",
+    #     attachments=[
+    #         {
+    #         "file_id": uploaded_bulletin.id,
+    #         "tools": [{"type": "file_search"}]
+    #         }
+    #     ]
+    # )
 
     for event in activity:
         print(event)
+        prompt = MASSTIME_PROMPT # etc
         if event in ["mass"]:
-            client.beta.threads.messages.update(content=MASSTIME_PROMPT)
+            prompt = MASSTIME_PROMPT
         if event in ["conf"]:
-            client.beta.threads.messages.update(content=CONFESSIONTIME_PROMPT)
+            prompt = CONFESSIONTIME_PROMPT
         if event in ["adore"]:
-            client.beta.threads.messages.update(content=ADORATION_PROMPT)
+            prompt = ADORATION_PROMPT
+        client.beta.threads.messages.create(
+            thread_id=thread.id,
+            role="user",
+            content=prompt,
+            attachments=[
+                {
+                "file_id": uploaded_bulletin.id,
+                "tools": [{"type": "file_search"}]
+                }
+            ]
+        )
+        try:
+            response = client.beta.threads.runs.create(
+                thread_id=thread.id,
+                assistant_id=assistant.id
+            )
+        except:
+            raise
+
         #client.beta.threads.runs.update(run_id=response.id)
         while response.status in ["queued", "in_progress", "cancelling"]:
-            print(response.status)
+        #    print(response.status)
             sleep(2)
             response = client.beta.threads.runs.retrieve(thread_id=thread.id, run_id=response.id)
         messages_response = client.beta.threads.messages.list(thread_id=thread.id)
+        response_role = messages_response.data[0].role
+        #print(response_role)
+
+
+        if response_role == "user":
+    #        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
+            print(f"Last message in the thread is not from the assistant. Perhaps a usage limit issue? No response at all?")
+            print(messages_response.data[0].content[0].text.value)
+            return ""
+
+        response_string = messages_response.data[0].content[0].text.value
+    #   print(response_string)
+        json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
+
+        try:
+            response_json = json.loads(json_str)
+            if event in ["mass"]:
+                response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]
+            if event in ["conf"]:
+                response_confessiontimes = [ConfessionTime.model_validate_json(json.dumps(j)) for j in response_json]
+            if event in ["adore"]:
+                response_adorationtimes = [AdorationTime.model_validate_json(json.dumps(a)) for a in response_json]
+        except ValueError:
+            print(f'Something went wrong parsing the JSON: {json_str}')
+            print(f'The OpenAI response might be helpful: {response_string}')
+            return ""
 
     #         thread_id=thread.id,
     #         content=CONFESSIONTIME_PROMPT,
@@ -121,8 +162,8 @@ def get_times(client: openai.Client, assistant_id:str, activity:str, bulletin_pd
     #             "tools": [{"type": "file_search"}]
     #             }
     #         ]
-    #     )   
-    # if activity in ["adore"]:   
+    #     )
+    # if activity in ["adore"]:
     #     client.beta.threads.messages.create(
     #         thread_id=thread.id,
     #         content=ADORATION_PROMPT,
@@ -133,41 +174,11 @@ def get_times(client: openai.Client, assistant_id:str, activity:str, bulletin_pd
     #             "tools": [{"type": "file_search"}]
     #             }
     #         ]
-    #     )    
-
-
+    #     )
     client.files.delete(uploaded_bulletin.id)
     client.beta.threads.delete(thread.id)
 
-    response_role = messages_response.data[0].role
-    print(response_role)
-
-
-    if response_role == "user":
-#        raise Exception("Last message in thread is not from the assistant. Have you hit the usage limit?")
-        print(f"Last message in the thread is not from the assistant. Perhaps a usage limit issue? No response at all?")
-        print(messages_response.data[0].content[0].text.value)
-        return ""
-
-    response_string = messages_response.data[0].content[0].text.value
-#    print(response_string)
-    json_str = response_string[response_string.find("[") : response_string.rfind("]") + 1]
-
-    try:
-        response_json = json.loads(json_str)
-        if activity in ["mass"]:
-            response_masstimes = [MassTime.model_validate_json(json.dumps(j)) for j in response_json]
-            return response_masstimes
-        if activity in ["conf"]:
-            response_confessiontimes = [ConfessionTime.model_validate_json(json.dumps(j)) for j in response_json]
-            return response_confessiontimes 
-        if activity in ["adore"]:
-            response_adorationtimes = [AdorationTime.model_validate_json(json.dumps(a)) for a in response_json]
-            return response_adorationtimes
-    except ValueError:
-        print(f'Something went wrong parsing the JSON: {json_str}')
-        print(f'The OpenAI response might be helpful: {response_string}')
-        return ""
+    return(response_masstimes, response_confessiontimes, response_adorationtimes)
 
 def count_pages(pdf:IO[bytes]) -> int:
     try:
@@ -189,7 +200,7 @@ if __name__ == '__main__':
         client = openai.Client()
         assistant_id = environ["BULLETIN_ASSISTANT_ID"]
 
-        mass_times = get_times(client, assistant_id, "adore", bulletin_file)
+        mass_times = get_times(client, assistant_id, "mass", bulletin_file)
 
         for mass_time in mass_times:
             print(mass_time)

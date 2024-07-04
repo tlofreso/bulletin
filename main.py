@@ -84,38 +84,37 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
 ### Only delete bulletin file remotely after I'm done with it
 ### Adjust event logic & checking
         openai_client = Client()
+
+        activities_to_get = []
         if mass:
-            mass_times = get_times(openai_client, config.bulletin_assistant_id, "mass", temp_file)
-            log(f"Extracted {len(mass_times)} mass times.", console=True)
-            if len(mass_times) == 0:
-                log(f"Because no masses were found, they will not be updated.", console=True)
-
-            for mass_time in mass_times:
-                log(f"Found mass {mass_time}", console=verbose)
-        else:
-            mass_times = ""
-
+            activities_to_get.append("mass") 
         if confession:
-            confession_times = get_times(openai_client, config.bulletin_assistant_id, "conf", temp_file)
-            log(f"Extracted {len(confession_times)} confession times.", console = True)
-            if len(confession_times) == 0:
-                log(f"Because no confessions were found, they will not be updated.", console=True)
-            
-            for confession_time in confession_times:
-                log(f"Found confession at {confession_time}", console=verbose)
-        else:
-            confession_times = ""
-
+            activities_to_get.append("conf") 
         if adoration:
-            adoration_times = get_times(openai_client, config.bulletin_assistant_id, "adore", temp_file)
-            log(f"Extracted {len(adoration_times)} adoration times.", console=True)
-            if len(adoration_times) == 0:
-                log(f"Because no adoration was found, this will not be updated.", console=True)
-            
-            for adoration_time in adoration_times:
-                log(f"Found adoration at {adoration_time}", console=verbose)
-        else:
-            adoration_times = ""
+            activities_to_get.append("adore")
+
+        mass_times, confession_times, adoration_times = get_times(openai_client, config.bulletin_assistant_id, activities_to_get, temp_file)
+
+        log(f"Extracted {len(mass_times)} mass times.", console=True)
+        log(f"Extracted {len(confession_times)} confession times.", console=True)
+        log(f"Extracted {len(adoration_times)} adoration times.", console=True)
+        if len(mass_times) == 0:
+            log(f"Because no masses were found, they will not be updated.", console=True)
+
+        for mass_time in mass_times:
+                log(f"Found mass {mass_time}", console=verbose)
+
+        if len(confession_times) == 0:
+            log(f"Because no confessions were found, they will not be updated.", console=True)
+        
+        for confession_time in confession_times:
+            log(f"Found confession at {confession_time}", console=verbose)
+
+        if len(adoration_times) == 0:
+            log(f"Because no adoration was found, this will not be updated.", console=True)
+        
+        for adoration_time in adoration_times:
+            log(f"Found adoration at {adoration_time}", console=verbose)
 
         if dry_run:
             log(f"Dry run - skipping DB update.", console=True)
