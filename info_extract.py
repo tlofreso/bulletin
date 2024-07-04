@@ -93,7 +93,7 @@ def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulle
     # )
 
     for event in activity:
-        print(event)
+#        print(event)
         prompt = MASSTIME_PROMPT # etc
         if event in ["mass"]:
             prompt = MASSTIME_PROMPT
