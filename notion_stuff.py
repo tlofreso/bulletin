@@ -23,6 +23,16 @@ class ParishRow(BaseModel):
     last_run_timestamp:date
     publisher:str
 
+class ParishActivities(BaseModel):
+    name:str
+    enabled:bool
+    parish_id:str
+    last_run_timestamp:str
+    mass_times:str
+    conf_times:str
+    adore_times:str
+    logs:str
+
 
 def createParish(parishName):
     notion.pages.create(
@@ -139,6 +149,41 @@ def get_all_parishes(client:Client, database_id:str, cursor=None) -> List[Parish
         results.extend(get_all_parishes(client, database_id, cursor=response["next_cursor"]))
     
     return results
+
+def extract_all_parish_info(client:Client, database_id:str, cursor=None) -> List[ParishActivities]:
+    """
+    Pulls data from every Parish in the DB.
+    """
+    if cursor == None:
+        response = client.databases.query(database_id)
+    else:
+        response = client.databases.query(database_id, start_cursor=cursor)
+
+    results = []
+    for row in response["results"]:
+        last_run_timestamp_str = get_row_property_value(row, "GPT Timestamp")
+        if len(last_run_timestamp_str.strip()) == 0:
+            last_run_timestamp_str = "1980-01-01"
+        results.append(ParishActivities(
+            name      = get_row_property_value(row, "Name"),
+            parish_id = get_row_property_value(row, "ParishID"),
+            last_run_timestamp = str(date.fromisoformat(last_run_timestamp_str)),
+            mass_times = get_row_property_value(row, "GPT Results"),
+            conf_times = get_row_property_value(row, "Confession Testing"),
+            adore_times = get_row_property_value(row, "Adoration Testing"),
+            logs = get_row_property_value(row, "GPT Logs"),
+            enabled = get_row_property_value(row, "Enable")
+        ))
+
+    # pagination via recursion isn't probably a perfect idea, but I'm lazy
+    if response["has_more"] == True:
+        results.extend(extract_all_parish_info(client, database_id, cursor=response["next_cursor"]))
+#    print(json.dumps(results))
+
+    return results
+
+
+
 
 def get_individual_parish(client:Client, database_id:str, parish_id:str, cursor=None) -> List[ParishRow]:
     """
