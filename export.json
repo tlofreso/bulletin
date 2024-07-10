@@ -1,0 +1,83 @@
+{
+  "Visitation of Mary, Akron": [
+    {
+      "name": "Visitation of Mary, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "visitation-of-mary-parish-akron-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 1730
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Thursday",
+          "time": 1700,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1700,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ]
+}
