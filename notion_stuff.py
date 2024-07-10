@@ -175,15 +175,10 @@ def extract_all_parish_info(client:Client, database_id:str, cursor=None) -> List
             enabled = get_row_property_value(row, "Enable")
         ))
 
-    # pagination via recursion isn't probably a perfect idea, but I'm lazy
     if response["has_more"] == True:
         results.extend(extract_all_parish_info(client, database_id, cursor=response["next_cursor"]))
-#    print(json.dumps(results))
 
     return results
-
-
-
 
 def get_individual_parish(client:Client, database_id:str, parish_id:str, cursor=None) -> List[ParishRow]:
     """
