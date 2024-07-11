@@ -79,5 +79,10305 @@
     {
       "logs": ""
     }
+  ],
+  "Queen of Heaven, Uniontown": [
+    {
+      "name": "Queen of Heaven, Uniontown"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "21865"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 530
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Transfiguration, Lakewood": [
+    {
+      "name": "Transfiguration, Lakewood"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0240"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Ss. Robert and William, Euclid": [
+    {
+      "name": "Ss. Robert and William, Euclid"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1806"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 1130
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 1130
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Ss. Peter and Paul, Garfield Heights": [
+    {
+      "name": "Ss. Peter and Paul, Garfield Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0069"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Ss. Peter and Paul, Doylestown": [
+    {
+      "name": "Ss. Peter and Paul, Doylestown"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "32966"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Ss. Cosmas and Damian, Twinsburg": [
+    {
+      "name": "Ss. Cosmas and Damian, Twinsburg"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "ss-cosmas-damian-twinsburg-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Wednesday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1445,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1400,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 100,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 1400,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 2200,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Sunday",
+          "time": 100,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Wendelin, Cleveland": [
+    {
+      "name": "St. Wendelin, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Vitus, Cleveland": [
+    {
+      "name": "St. Vitus, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-vitus-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 1700
+        },
+        {
+          "day": "Tuesday",
+          "time": 1700
+        },
+        {
+          "day": "Wednesday",
+          "time": 1700
+        },
+        {
+          "day": "Thursday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 1700
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 830,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1900,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Vincent de Paul, Elyria": [
+    {
+      "name": "St. Vincent de Paul, Elyria"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-vincent-de-paul-elyria-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 800,
+          "duration": 540
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Vincent de Paul, Cleveland": [
+    {
+      "name": "St. Vincent de Paul, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "4004"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Vincent de Paul, Akron": [
+    {
+      "name": "St. Vincent de Paul, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1794"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 628
+        },
+        {
+          "day": "Tuesday",
+          "time": 628
+        },
+        {
+          "day": "Wednesday",
+          "time": 628
+        },
+        {
+          "day": "Thursday",
+          "time": 628
+        },
+        {
+          "day": "Friday",
+          "time": 628
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Victor, Richfield": [
+    {
+      "name": "St. Victor, Richfield"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0134"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 845
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Thomas More, Brooklyn": [
+    {
+      "name": "St. Thomas More, Brooklyn"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0670"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 1845
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        },
+        {
+          "day": "Saturday",
+          "time": 815
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Thomas, Sheffield Lake": [
+    {
+      "name": "St. Thomas, Sheffield Lake"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Theresa of Avila, Sheffield ": [
+    {
+      "name": "St. Theresa of Avila, Sheffield "
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1786"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Therese, Garfield Heights": [
+    {
+      "name": "St. Therese, Garfield Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1548"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1730
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 1830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Stephen, West Salem": [
+    {
+      "name": "St. Stephen, West Salem"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "20812"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Wednesday",
+          "time": 1600
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Stephen, Cleveland": [
+    {
+      "name": "St. Stephen, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Stanislaus, Cleveland": [
+    {
+      "name": "St. Stanislaus, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0242"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 645
+        },
+        {
+          "day": "Monday",
+          "time": 1215
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 645
+        },
+        {
+          "day": "Wednesday",
+          "time": 1215
+        },
+        {
+          "day": "Thursday",
+          "time": 645
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 645
+        },
+        {
+          "day": "Friday",
+          "time": 1215
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 830,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Sebastian, Akron": [
+    {
+      "name": "St. Sebastian, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0689"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Tuesday",
+          "time": 1900,
+          "duration": 30
+        },
+        {
+          "day": "Friday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 930,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Rocco, Cleveland": [
+    {
+      "name": "St. Rocco, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1841"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 645
+        },
+        {
+          "day": "Monday",
+          "time": 1830
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Tuesday",
+          "time": 1830
+        },
+        {
+          "day": "Wednesday",
+          "time": 645
+        },
+        {
+          "day": "Wednesday",
+          "time": 1830
+        },
+        {
+          "day": "Thursday",
+          "time": 645
+        },
+        {
+          "day": "Thursday",
+          "time": 1830
+        },
+        {
+          "day": "Friday",
+          "time": 645
+        },
+        {
+          "day": "Friday",
+          "time": 1830
+        },
+        {
+          "day": "Saturday",
+          "time": 645
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Rita, Solon": [
+    {
+      "name": "St. Rita, Solon"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1772"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 845
+        },
+        {
+          "day": "Tuesday",
+          "time": 845
+        },
+        {
+          "day": "Wednesday",
+          "time": 845
+        },
+        {
+          "day": "Thursday",
+          "time": 845
+        },
+        {
+          "day": "Friday",
+          "time": 845
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 715
+        },
+        {
+          "day": "Sunday",
+          "time": 845
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1215
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Richard, North Olmsted": [
+    {
+      "name": "St. Richard, North Olmsted"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0080"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 700
+        },
+        {
+          "day": "Sunday",
+          "time": 1015
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Raphael, Bay Village": [
+    {
+      "name": "St. Raphael, Bay Village"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1814"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 745
+        },
+        {
+          "day": "Monday",
+          "time": 915
+        },
+        {
+          "day": "Tuesday",
+          "time": 745
+        },
+        {
+          "day": "Tuesday",
+          "time": 915
+        },
+        {
+          "day": "Wednesday",
+          "time": 745
+        },
+        {
+          "day": "Thursday",
+          "time": 915
+        },
+        {
+          "day": "Friday",
+          "time": 745
+        },
+        {
+          "day": "Friday",
+          "time": 915
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Peter, North Ridgeville": [
+    {
+      "name": "St. Peter, North Ridgeville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0141"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Peter, Loudonville": [
+    {
+      "name": "St. Peter, Loudonville"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Peter, Lorain": [
+    {
+      "name": "St. Peter, Lorain"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "29676"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 1730
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 1730
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Peter, Cleveland": [
+    {
+      "name": "St. Peter, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Paul, Cleveland": [
+    {
+      "name": "St. Paul, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0085"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Thursday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Paul, Akron": [
+    {
+      "name": "St. Paul, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-paul-akron-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Friday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 700,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Patrick, Wellington": [
+    {
+      "name": "St. Patrick, Wellington"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Patrick, Thompson": [
+    {
+      "name": "St. Patrick, Thompson"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "26778"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Tuesday",
+          "time": 845
+        },
+        {
+          "day": "Thursday",
+          "time": 845
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Patrick, Cleveland (Rocky River)": [
+    {
+      "name": "St. Patrick, Cleveland (Rocky River)"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1137"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Patrick, Cleveland (Bridge)": [
+    {
+      "name": "St. Patrick, Cleveland (Bridge)"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1798"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 915
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 715
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1045
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Paschal Baylon, Highland Heights": [
+    {
+      "name": "St. Paschal Baylon, Highland Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "5493"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1830
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Noel, Willoughby": [
+    {
+      "name": "St. Noel, Willoughby"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1714"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Monica, Garfield Heights": [
+    {
+      "name": "St. Monica, Garfield Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1572"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1045
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Michael the Archangel, Cleveland": [
+    {
+      "name": "St. Michael the Archangel, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "20822"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Saturday",
+          "time": 1900
+        },
+        {
+          "day": "Sunday",
+          "time": 945
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 1200
+        },
+        {
+          "day": "Wednesday",
+          "time": 1830
+        },
+        {
+          "day": "Thursday",
+          "time": 1830
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Michael, Independence": [
+    {
+      "name": "St. Michael, Independence"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1639"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mel, Cleveland": [
+    {
+      "name": "St. Mel, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mel-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 700
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Friday",
+          "time": 645
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Matthias, Parma": [
+    {
+      "name": "St. Matthias, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-matthias-the-apostle-parma-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-05"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary of the Immaculate Conception, Wooster": [
+    {
+      "name": "St. Mary of the Immaculate Conception, Wooster"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1101"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 930
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary of the Immaculate Conception, Avon": [
+    {
+      "name": "St. Mary of the Immaculate Conception, Avon"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1071"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 745
+        },
+        {
+          "day": "Tuesday",
+          "time": 745
+        },
+        {
+          "day": "Wednesday",
+          "time": 745
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 745
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary of the Falls, Olmsted Falls": [
+    {
+      "name": "St. Mary of the Falls, Olmsted Falls"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-of-the-falls-olmsted-falls-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 1900,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary of the Assumption, Mentor": [
+    {
+      "name": "St. Mary of the Assumption, Mentor"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0886"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 900,
+          "duration": 480
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary Magdalene, Willowick": [
+    {
+      "name": "St. Mary Magdalene, Willowick"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1532"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Painesville": [
+    {
+      "name": "St. Mary, Painesville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-painesville-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Sunday",
+          "time": 1800
+        },
+        {
+          "day": "Monday",
+          "time": 645
+        },
+        {
+          "day": "Monday",
+          "time": 1215
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Wednesday",
+          "time": 1215
+        },
+        {
+          "day": "Thursday",
+          "time": 645
+        },
+        {
+          "day": "Friday",
+          "time": 1215
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Friday",
+          "time": 1300,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Sunday",
+          "time": 1730,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 700,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Lorain": [
+    {
+      "name": "St. Mary, Lorain"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Hudson": [
+    {
+      "name": "St. Mary, Hudson"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-hudson-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Monday",
+          "time": 1830,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1100,
+          "duration": 480
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Elyria": [
+    {
+      "name": "St. Mary, Elyria"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-elyria-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-05"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Cleveland (Collonwood)": [
+    {
+      "name": "St. Mary, Cleveland (Collonwood)"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 745
+        },
+        {
+          "day": "Tuesday",
+          "time": 745
+        },
+        {
+          "day": "Wednesday",
+          "time": 745
+        },
+        {
+          "day": "Thursday",
+          "time": 745
+        },
+        {
+          "day": "Friday",
+          "time": 745
+        },
+        {
+          "day": "Saturday",
+          "time": 745
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1015
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Sunday",
+          "time": 930,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 800,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Chardon": [
+    {
+      "name": "St. Mary, Chardon"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "23926"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Thursday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Berea": [
+    {
+      "name": "St. Mary, Berea"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-mary-berea-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1200,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Bedford": [
+    {
+      "name": "St. Mary, Bedford"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1136"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 915
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mary, Akron": [
+    {
+      "name": "St. Mary, Akron"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Martin of Tours, Valley City": [
+    {
+      "name": "St. Martin of Tours, Valley City"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1584"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 1700
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Martin of Tours, Maple Heights": [
+    {
+      "name": "St. Martin of Tours, Maple Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-martin-of-tours-maple-heights-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-05"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 730
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Monday",
+          "time": 1830
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 1830
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 1830
+        },
+        {
+          "day": "Thursday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1730,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Mark, Cleveland": [
+    {
+      "name": "St. Mark, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1776"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 645
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Matthew, Akron": [
+    {
+      "name": "St. Matthew, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-matthew-akron-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 900,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Malachi, Cleveland": [
+    {
+      "name": "St. Malachi, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0568"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Tuesday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Luke, Lakewood": [
+    {
+      "name": "St. Luke, Lakewood"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1746"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Thursday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Lucy Mission, Middlefield": [
+    {
+      "name": "St. Lucy Mission, Middlefield"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Leo the Great, Cleveland": [
+    {
+      "name": "St. Leo the Great, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Ladislas, Westlake": [
+    {
+      "name": "St. Ladislas, Westlake"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1704"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Justin Martyr, Eastlake": [
+    {
+      "name": "St. Justin Martyr, Eastlake"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Julie Billiart, North Ridgeville": [
+    {
+      "name": "St. Julie Billiart, North Ridgeville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0169"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 1730
+        },
+        {
+          "day": "Wednesday",
+          "time": 1730
+        },
+        {
+          "day": "Friday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Jude, Elryia": [
+    {
+      "name": "St. Jude, Elryia"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1352"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Joseph, Cuyahoga Falls": [
+    {
+      "name": "St. Joseph, Cuyahoga Falls"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1414"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 845
+        },
+        {
+          "day": "Tuesday",
+          "time": 845
+        },
+        {
+          "day": "Wednesday",
+          "time": 845
+        },
+        {
+          "day": "Thursday",
+          "time": 845
+        },
+        {
+          "day": "Friday",
+          "time": 845
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Joseph, Strongsville": [
+    {
+      "name": "St. Joseph, Strongsville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0116"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 1830
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Thursday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Joseph, Avon Lake": [
+    {
+      "name": "St. Joseph, Avon Lake"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0138"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Joseph, Amherst": [
+    {
+      "name": "St. Joseph, Amherst"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-joseph-amherst-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Saturday",
+          "time": 1730
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1100,
+          "duration": 60
+        },
+        {
+          "day": "Thursday",
+          "time": 1930,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1100,
+          "duration": 660
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 1100,
+          "duration": 660
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1100,
+          "duration": 660
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1100,
+          "duration": 660
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1100,
+          "duration": 660
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John Vianney, Mentor": [
+    {
+      "name": "St. John Vianney, Mentor"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1142"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1215
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John Neumann, Strongsville": [
+    {
+      "name": "St. John Neumann, Strongsville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0164"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John the Baptist, Akron": [
+    {
+      "name": "St. John the Baptist, Akron"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John of the Cross, Euclid": [
+    {
+      "name": "St. John of the Cross, Euclid"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John Bosco, Parma Heights": [
+    {
+      "name": "St. John Bosco, Parma Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "saint-john-bosco-parma-heights-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Thursday",
+          "time": 1815,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John Nepomucene, Cleveland": [
+    {
+      "name": "St. John Nepomucene, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "2452"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. John Cantius, Cleveland": [
+    {
+      "name": "St. John Cantius, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1130"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 1730
+        },
+        {
+          "day": "Tuesday",
+          "time": 1730
+        },
+        {
+          "day": "Wednesday",
+          "time": 1730
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Joan of Arc, Chagrin Falls": [
+    {
+      "name": "St. Joan of Arc, Chagrin Falls"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0216"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Jerome, Cleveland": [
+    {
+      "name": "St. Jerome, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-jerome-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1445,
+          "duration": 45
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1900,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. James, Lakewood": [
+    {
+      "name": "St. James, Lakewood"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Ignatius of Antioch, Cleveland": [
+    {
+      "name": "St. Ignatius of Antioch, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1311"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Hilary, Fairlawn": [
+    {
+      "name": "St. Hilary, Fairlawn"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0599"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        },
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Monday",
+          "time": 930
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 930
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 930
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Helen, Newbury": [
+    {
+      "name": "St. Helen, Newbury"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Gabriel, Concord": [
+    {
+      "name": "St. Gabriel, Concord"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1286"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1645
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Francis of Assissi, Gates Mills": [
+    {
+      "name": "St. Francis of Assissi, Gates Mills"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Francis Xavier Cabrini, Lorain": [
+    {
+      "name": "St. Francis Xavier Cabrini, Lorain"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-frances-xavier-cabrini-parish-lorain-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 2330
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 1000,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 800,
+          "duration": 540
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Francis Xavier, Medina": [
+    {
+      "name": "St. Francis Xavier, Medina"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1241"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Thursday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Francis de Sales, Parma": [
+    {
+      "name": "St. Francis de Sales, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0523"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 845
+        },
+        {
+          "day": "Tuesday",
+          "time": 845
+        },
+        {
+          "day": "Wednesday",
+          "time": 845
+        },
+        {
+          "day": "Thursday",
+          "time": 845
+        },
+        {
+          "day": "Friday",
+          "time": 845
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Francis de Sales, Akron": [
+    {
+      "name": "St. Francis de Sales, Akron"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Eugene, Cuyahoga Falls": [
+    {
+      "name": "St. Eugene, Cuyahoga Falls"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1734"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 1100
+        },
+        {
+          "day": "Tuesday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 1100
+        },
+        {
+          "day": "Thursday",
+          "time": 1100
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Elizabeth of Hungry, Cleveland": [
+    {
+      "name": "St. Elizabeth of Hungry, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Elizabeth Ann Seton, Columbia Station": [
+    {
+      "name": "St. Elizabeth Ann Seton, Columbia Station"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-elizabeth-ann-seton-columbia-station-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Holy Day",
+          "time": 1600
+        },
+        {
+          "day": "Holy Day",
+          "time": 900
+        },
+        {
+          "day": "Holy Day",
+          "time": 1900
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1200,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Emeric, Cleveland": [
+    {
+      "name": "St. Emeric, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Edward, Parkman": [
+    {
+      "name": "St. Edward, Parkman"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Edward, Ashland": [
+    {
+      "name": "St. Edward, Ashland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1285"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 1315
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Dominic, Shaker Heights": [
+    {
+      "name": "St. Dominic, Shaker Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-dominic-shaker-heights-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Cyprian, Perry": [
+    {
+      "name": "St. Cyprian, Perry"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Columbkille, Parma": [
+    {
+      "name": "St. Columbkille, Parma"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Colman, Cleveland": [
+    {
+      "name": "St. Colman, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0882"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Colette, Brunswick": [
+    {
+      "name": "St. Colette, Brunswick"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1088"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1145
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 1100
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Clement, Lakewood": [
+    {
+      "name": "St. Clement, Lakewood"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Clarence, North Olmsted": [
+    {
+      "name": "St. Clarence, North Olmsted"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0678"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Clare, Lyndhurst": [
+    {
+      "name": "St. Clare, Lyndhurst"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Christopher, Rocky River": [
+    {
+      "name": "St. Christopher, Rocky River"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0083"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 1100
+        },
+        {
+          "day": "Tuesday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 1100
+        },
+        {
+          "day": "Thursday",
+          "time": 1100
+        },
+        {
+          "day": "Friday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Charles Borromeo, Parma": [
+    {
+      "name": "St. Charles Borromeo, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "2492"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        },
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Monday",
+          "time": 1900
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 1900
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 1930
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Casimir, Euclid": [
+    {
+      "name": "St. Casimir, Euclid"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Casimir, Cleveland": [
+    {
+      "name": "St. Casimir, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Bridget of Kildare, Parma": [
+    {
+      "name": "St. Bridget of Kildare, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0241"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Saturday",
+          "time": 1730
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Brendan, North Olmsted": [
+    {
+      "name": "St. Brendan, North Olmsted"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0290"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Boniface, Cleveland": [
+    {
+      "name": "St. Boniface, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Bernard, Akron": [
+    {
+      "name": "St. Bernard, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "22544"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Sunday",
+          "time": 2000
+        },
+        {
+          "day": "Monday",
+          "time": 1210
+        },
+        {
+          "day": "Tuesday",
+          "time": 1210
+        },
+        {
+          "day": "Wednesday",
+          "time": 1210
+        },
+        {
+          "day": "Thursday",
+          "time": 930
+        },
+        {
+          "day": "Friday",
+          "time": 1210
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Bernadette, Westlake": [
+    {
+      "name": "St. Bernadette, Westlake"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-bernadette-westlake-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 945
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 930,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Bede the Venerable, Mentor": [
+    {
+      "name": "St. Bede the Venerable, Mentor"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1094"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 1900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Basil The Great, Brecksville": [
+    {
+      "name": "St. Basil The Great, Brecksville"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "st-basil-the-great-brecksville-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 830,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 830,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Bartholomew, Middleburg Heights": [
+    {
+      "name": "St. Bartholomew, Middleburg Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0288"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Barnabas, Northfield": [
+    {
+      "name": "St. Barnabas, Northfield"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0509"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Barbara, Cleveland": [
+    {
+      "name": "St. Barbara, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Augustine, Cleveland": [
+    {
+      "name": "St. Augustine, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Augustine, Barberton": [
+    {
+      "name": "St. Augustine, Barberton"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anthony of Padua, Parma": [
+    {
+      "name": "St. Anthony of Padua, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0054"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Saturday",
+          "time": 1800
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anthony of Padua, Lorain": [
+    {
+      "name": "St. Anthony of Padua, Lorain"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0147"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anthony of Padua, Fairport Harbor": [
+    {
+      "name": "St. Anthony of Padua, Fairport Harbor"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0199"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anthony of Padua, Akron": [
+    {
+      "name": "St. Anthony of Padua, Akron"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anselm, Chesterland": [
+    {
+      "name": "St. Anselm, Chesterland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1736"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 1900
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Anne, Rittman": [
+    {
+      "name": "St. Anne, Rittman"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0920"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Saturday",
+          "time": 1800
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Angela Merici, Fairview Park": [
+    {
+      "name": "St. Angela Merici, Fairview Park"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1060"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Andrew the Apostle, Norton": [
+    {
+      "name": "St. Andrew the Apostle, Norton"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0030"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1730
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Andrew Kim, Cleveland": [
+    {
+      "name": "St. Andrew Kim, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Ambrose, Brunswick": [
+    {
+      "name": "St. Ambrose, Brunswick"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1485"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        },
+        {
+          "day": "Thursday",
+          "time": 1730
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Saturday",
+          "time": 815
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Aloysius - St. Agatha, Cleveland": [
+    {
+      "name": "St. Aloysius - St. Agatha, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1472"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Wednesday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Albert the Great, North Royalton": [
+    {
+      "name": "St. Albert the Great, North Royalton"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "saint-albert-the-great-north-royalton-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 1130
+        },
+        {
+          "day": "Tuesday",
+          "time": 1130
+        },
+        {
+          "day": "Wednesday",
+          "time": 1130
+        },
+        {
+          "day": "Thursday",
+          "time": 1130
+        },
+        {
+          "day": "Friday",
+          "time": 1130
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1800
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 800,
+          "duration": 5400
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 0,
+          "duration": 0
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 0,
+          "duration": 0
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 0,
+          "duration": 0
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Agnes, Orrville": [
+    {
+      "name": "St. Agnes, Orrville"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Agnes, Elyria": [
+    {
+      "name": "St. Agnes, Elyria"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "saint-agnes-elyria-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 930,
+          "duration": 120
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Agnes - Our Lady of Fatima, Cleveland": [
+    {
+      "name": "St. Agnes - Our Lady of Fatima, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Adalbert, Cleveland": [
+    {
+      "name": "St. Adalbert, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "St. Adalbert, Berea": [
+    {
+      "name": "St. Adalbert, Berea"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0090"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 1830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Sagrada Familia, Cleveland": [
+    {
+      "name": "Sagrada Familia, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0131"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Wednesday",
+          "time": 1830
+        },
+        {
+          "day": "Thursday",
+          "time": 1830
+        },
+        {
+          "day": "Friday",
+          "time": 1830
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Sacred Heart of Jesus, Wadsworth": [
+    {
+      "name": "Sacred Heart of Jesus, Wadsworth"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1608"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Sacred Heart of Jesus, South Euclid": [
+    {
+      "name": "Sacred Heart of Jesus, South Euclid"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0885"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Monday",
+          "time": 1210
+        },
+        {
+          "day": "Tuesday",
+          "time": 1210
+        },
+        {
+          "day": "Wednesday",
+          "time": 1210
+        },
+        {
+          "day": "Thursday",
+          "time": 1210
+        },
+        {
+          "day": "Friday",
+          "time": 1210
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Sacred Heart Chapel, Lorain": [
+    {
+      "name": "Sacred Heart Chapel, Lorain"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": "2392"
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Sacred Heart, Oberlin": [
+    {
+      "name": "Sacred Heart, Oberlin"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Resurrection of Our Lord, Solon": [
+    {
+      "name": "Resurrection of Our Lord, Solon"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1733"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Wednesday",
+          "time": 1900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Prince of Peace, Norton": [
+    {
+      "name": "Prince of Peace, Norton"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0512"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady Queen of Peace, Grafton": [
+    {
+      "name": "Our Lady Queen of Peace, Grafton"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "13722"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 1830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Victory, Tallmadge": [
+    {
+      "name": "Our Lady of Victory, Tallmadge"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "our-lady-of-victory-tallmadge-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1700,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of the Lake, Euclid": [
+    {
+      "name": "Our Lady of the Lake, Euclid"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0674"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Peace, Cleveland": [
+    {
+      "name": "Our Lady of Peace, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Mount Carmel, Wickliffe": [
+    {
+      "name": "Our Lady of Mount Carmel, Wickliffe"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "our-lady-of-mount-carmel-wickliffe-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Monday",
+          "time": 1900
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 45
+        },
+        {
+          "day": "Friday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Mount Carmel, Cleveland": [
+    {
+      "name": "Our Lady of Mount Carmel, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0582"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 1800
+        },
+        {
+          "day": "Wednesday",
+          "time": 1800
+        },
+        {
+          "day": "Friday",
+          "time": 1800
+        },
+        {
+          "day": "Tuesday",
+          "time": 630
+        },
+        {
+          "day": "Thursday",
+          "time": 630
+        },
+        {
+          "day": "Saturday",
+          "time": 815
+        },
+        {
+          "day": "First Friday",
+          "time": 2200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Lourdes, Cleveland": [
+    {
+      "name": "Our Lady of Lourdes, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "our-lady-of-lourdes-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1230
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Hope, Bedford": [
+    {
+      "name": "Our Lady of Hope, Bedford"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0009"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Guadalupe, Macedonia": [
+    {
+      "name": "Our Lady of Guadalupe, Macedonia"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Grace, Hinckley": [
+    {
+      "name": "Our Lady of Grace, Hinckley"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "30803"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady of Angels, Cleveland": [
+    {
+      "name": "Our Lady of Angels, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "our-lady-of-angels-cleveland-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady Help of Christian, Seville": [
+    {
+      "name": "Our Lady Help of Christian, Seville"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady Help of Christians, Nova": [
+    {
+      "name": "Our Lady Help of Christians, Nova"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady Help of Christians, Lodi": [
+    {
+      "name": "Our Lady Help of Christians, Lodi"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Our Lady Help of Christians, Litchfield": [
+    {
+      "name": "Our Lady Help of Christians, Litchfield"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "our-lady-help-of-christians-litchfield-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 1200
+        },
+        {
+          "day": "Tuesday",
+          "time": 1200
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Thursday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Wednesday",
+          "time": 1700,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Nativity of the Lord Jesus, Akron": [
+    {
+      "name": "Nativity of the Lord Jesus, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0042"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 930
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Nativity of the Blessed Virgin Mary, South Amherst": [
+    {
+      "name": "Nativity of the Blessed Virgin Mary, South Amherst"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Nativity of the Blessed Virgin Mary, Lorain": [
+    {
+      "name": "Nativity of the Blessed Virgin Mary, Lorain"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "nativity-of-blessed-virgin-mary-lorain-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1300
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Monday",
+          "time": 1200
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 1200
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Sunday",
+          "time": 1030,
+          "duration": 30
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Mother of Sorrows, Peninsula": [
+    {
+      "name": "Mother of Sorrows, Peninsula"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": "0134-2"
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Mary Queen of Peace, Cleveland": [
+    {
+      "name": "Mary Queen of Peace, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0875"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 615
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 615
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 615
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 615
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 615
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 1900
+        },
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Mary Queen of Apostles, Brook Park": [
+    {
+      "name": "Mary Queen of Apostles, Brook Park"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0571"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Heart of Mary, Cuyahoga Falls": [
+    {
+      "name": "Immaculate Heart of Mary, Cuyahoga Falls"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "immaculate-heart-of-mary-cuyahoga-falls-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 815
+        },
+        {
+          "day": "Thursday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Heart of Mary, Cleveland": [
+    {
+      "name": "Immaculate Heart of Mary, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Conception, Willoughby": [
+    {
+      "name": "Immaculate Conception, Willoughby"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1318"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 730
+        },
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 730
+        },
+        {
+          "day": "Friday",
+          "time": 1900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Conception, Madison": [
+    {
+      "name": "Immaculate Conception, Madison"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1170"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Conception, Cleveland": [
+    {
+      "name": "Immaculate Conception, Cleveland"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Immaculate Conception, Akron": [
+    {
+      "name": "Immaculate Conception, Akron"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Trinity, Avon": [
+    {
+      "name": "Holy Trinity, Avon"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1089"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 1930
+        },
+        {
+          "day": "Tuesday",
+          "time": 745
+        },
+        {
+          "day": "Wednesday",
+          "time": 745
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 745
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Spirit, Garfield Heights": [
+    {
+      "name": "Holy Spirit, Garfield Heights"
+    },
+    {
+      "enabled": false
+    },
+    {
+      "parish_id": ""
+    },
+    {
+      "last_run_timestamp": "1980-01-01"
+    },
+    {
+      "mass_times": ""
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Spirit, Avon Lake": [
+    {
+      "name": "Holy Spirit, Avon Lake"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0036"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1200
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Rosary, Cleveland": [
+    {
+      "name": "Holy Rosary, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "5217"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 2000
+        },
+        {
+          "day": "Monday",
+          "time": 1215
+        },
+        {
+          "day": "Tuesday",
+          "time": 1215
+        },
+        {
+          "day": "Wednesday",
+          "time": 1215
+        },
+        {
+          "day": "Friday",
+          "time": 1215
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Redeemer, Cleveland": [
+    {
+      "name": "Holy Redeemer, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0342"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Name, Cleveland": [
+    {
+      "name": "Holy Name, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0691"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 800
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1800
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Martyrs, Medina": [
+    {
+      "name": "Holy Martyrs, Medina"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1397"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
+        },
+        {
+          "day": "Monday",
+          "time": 1200
+        },
+        {
+          "day": "Tuesday",
+          "time": 1200
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Thursday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Family, Stow": [
+    {
+      "name": "Holy Family, Stow"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1236"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "First Saturday",
+          "time": 800
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Family, Parma": [
+    {
+      "name": "Holy Family, Parma"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "holy-family-parma-oh"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 815
+        },
+        {
+          "day": "Tuesday",
+          "time": 815
+        },
+        {
+          "day": "Wednesday",
+          "time": 1215
+        },
+        {
+          "day": "Thursday",
+          "time": 815
+        },
+        {
+          "day": "Friday",
+          "time": 815
+        }
+      ]
+    },
+    {
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
+    },
+    {
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1530,
+          "duration": 90
+        }
+      ]
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Holy Angels, Bainbridge": [
+    {
+      "name": "Holy Angels, Bainbridge"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "15918"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 700
+        },
+        {
+          "day": "Wednesday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 900
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Guardian Angels, Copley": [
+    {
+      "name": "Guardian Angels, Copley"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0077"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Gesu, University Heights": [
+    {
+      "name": "Gesu, University Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1687"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Divine Word, Kirtland": [
+    {
+      "name": "Divine Word, Kirtland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0884"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Communion of Saints, Cleveland Heights": [
+    {
+      "name": "Communion of Saints, Cleveland Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0414"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Thursday",
+          "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Cathedral of Saint John the Evangelist, Cleveland": [
+    {
+      "name": "Cathedral of Saint John the Evangelist, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1259"
+    },
+    {
+      "last_run_timestamp": "2024-06-29"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1030
+        },
+        {
+          "day": "Sunday",
+          "time": 1215
+        },
+        {
+          "day": "Sunday",
+          "time": 1730
+        },
+        {
+          "day": "Monday",
+          "time": 715
+        },
+        {
+          "day": "Monday",
+          "time": 1200
+        },
+        {
+          "day": "Tuesday",
+          "time": 715
+        },
+        {
+          "day": "Tuesday",
+          "time": 1200
+        },
+        {
+          "day": "Wednesday",
+          "time": 715
+        },
+        {
+          "day": "Wednesday",
+          "time": 1200
+        },
+        {
+          "day": "Thursday",
+          "time": 715
+        },
+        {
+          "day": "Thursday",
+          "time": 1200
+        },
+        {
+          "day": "Friday",
+          "time": 715
+        },
+        {
+          "day": "Friday",
+          "time": 1200
+        },
+        {
+          "day": "Saturday",
+          "time": 1630
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Blessed Trinity, Cleveland": [
+    {
+      "name": "Blessed Trinity, Cleveland"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0244"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 1100
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Blessed Trinity, Akron": [
+    {
+      "name": "Blessed Trinity, Akron"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "0039"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1700
+        },
+        {
+          "day": "Sunday",
+          "time": 830
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 1730
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
+  ],
+  "Assumption, Broadview Heights": [
+    {
+      "name": "Assumption, Broadview Heights"
+    },
+    {
+      "enabled": true
+    },
+    {
+      "parish_id": "1494"
+    },
+    {
+      "last_run_timestamp": "2024-07-04"
+    },
+    {
+      "mass_times": [
+        {
+          "day": "Monday",
+          "time": 630
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 630
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 630
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 630
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 630
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 730
+        },
+        {
+          "day": "Sunday",
+          "time": 930
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
+        },
+        {
+          "day": "Sunday",
+          "time": 1800
+        }
+      ]
+    },
+    {
+      "conf_times": ""
+    },
+    {
+      "adore_times": ""
+    },
+    {
+      "logs": ""
+    }
   ]
 }

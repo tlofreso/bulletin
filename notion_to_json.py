@@ -18,8 +18,8 @@ def main():
                 parish_json.append({element[0]: ""})
 
         master_json[parish_json[0]["name"]] = parish_json
-        with open('export.json', 'w', encoding='utf-8') as f:
-            json.dump(master_json, f, ensure_ascii=False, indent=2)
+    with open('export.json', 'w', encoding='utf-8') as f:
+        json.dump(master_json, f, ensure_ascii=False, indent=2)
         return("Exported Notion Data to export.json!")
 
 if __name__ == "__main__":
