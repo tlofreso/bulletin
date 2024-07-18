@@ -10,7 +10,7 @@
       "parish_id": "visitation-of-mary-parish-akron-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -41,14 +41,6 @@
         {
           "day": "Friday",
           "time": 800
-        },
-        {
-          "day": "Thursday",
-          "time": 1730
-        },
-        {
-          "day": "Sunday",
-          "time": 1000
         }
       ]
     },
@@ -91,13 +83,17 @@
       "parish_id": "21865"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
+          "day": "Saturday",
+          "time": 1630
+        },
+        {
           "day": "Sunday",
-          "time": 900
+          "time": 815
         },
         {
           "day": "Sunday",
@@ -125,15 +121,33 @@
         },
         {
           "day": "Saturday",
-          "time": 530
+          "time": 830
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Friday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -150,7 +164,7 @@
       "parish_id": "0240"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -181,10 +195,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -201,7 +228,7 @@
       "parish_id": "1806"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -211,23 +238,19 @@
         },
         {
           "day": "Tuesday",
-          "time": 830
+          "time": 630
         },
         {
           "day": "Wednesday",
-          "time": 1130
+          "time": 830
         },
         {
           "day": "Thursday",
-          "time": 900
+          "time": 630
         },
         {
           "day": "Friday",
-          "time": 1130
-        },
-        {
-          "day": "Saturday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Saturday",
@@ -235,23 +258,37 @@
         },
         {
           "day": "Sunday",
-          "time": 800
+          "time": 730
         },
         {
           "day": "Sunday",
-          "time": 1100
-        },
-        {
-          "day": "Sunday",
-          "time": 1800
+          "time": 930
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1430,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1000,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -268,7 +305,7 @@
       "parish_id": "0069"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -291,10 +328,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Thursday",
+          "time": 1700,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1800,
+          "duration": 30
+        }
+      ]
     },
     {
       "logs": ""
@@ -311,13 +366,17 @@
       "parish_id": "32966"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
           "day": "Saturday",
-          "time": 1700
+          "time": 1600
+        },
+        {
+          "day": "Saturday",
+          "time": 1800
         },
         {
           "day": "Sunday",
@@ -325,22 +384,10 @@
         },
         {
           "day": "Sunday",
-          "time": 1030
-        },
-        {
-          "day": "Sunday",
-          "time": 1200
+          "time": 1100
         },
         {
           "day": "Monday",
-          "time": 800
-        },
-        {
-          "day": "Tuesday",
-          "time": 800
-        },
-        {
-          "day": "Wednesday",
           "time": 800
         },
         {
@@ -348,16 +395,38 @@
           "time": 800
         },
         {
+          "day": "Wednesday",
+          "time": 1900
+        },
+        {
           "day": "Friday",
-          "time": 800
+          "time": 900
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Thursday",
+          "time": 1800,
+          "duration": 45
+        },
+        {
+          "day": "Saturday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 830,
+          "duration": 630
+        }
+      ]
     },
     {
       "logs": ""
@@ -374,7 +443,7 @@
       "parish_id": "ss-cosmas-damian-twinsburg-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -422,7 +491,7 @@
         {
           "day": "Saturday",
           "time": 1445,
-          "duration": 60
+          "duration": 75
         }
       ]
     },
@@ -501,10 +570,14 @@
       "parish_id": "st-vitus-cleveland-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
         {
           "day": "Sunday",
           "time": 900
@@ -527,15 +600,11 @@
         },
         {
           "day": "Thursday",
-          "time": 1200
+          "time": 1700
         },
         {
           "day": "Friday",
           "time": 1700
-        },
-        {
-          "day": "Saturday",
-          "time": 1600
         }
       ]
     },
@@ -557,8 +626,8 @@
       "adore_times": [
         {
           "is24hour": false,
-          "day": "Monday",
-          "time": 1900,
+          "day": "Thursday",
+          "time": 1800,
           "duration": 60
         }
       ]
@@ -578,10 +647,18 @@
       "parish_id": "st-vincent-de-paul-elyria-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
         {
           "day": "Thursday",
           "time": 900
@@ -596,6 +673,14 @@
         },
         {
           "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
           "time": 1130
         }
       ]
@@ -605,6 +690,16 @@
         {
           "day": "Saturday",
           "time": 1500,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 900,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 1100,
           "duration": 30
         }
       ]
@@ -634,7 +729,7 @@
       "parish_id": "4004"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -661,10 +756,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -681,7 +789,7 @@
       "parish_id": "1794"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -711,23 +819,37 @@
         },
         {
           "day": "Thursday",
-          "time": 628
+          "time": 900
         },
         {
           "day": "Friday",
           "time": 628
-        },
-        {
-          "day": "Thursday",
-          "time": 900
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        },
+        {
+          "day": "Thursday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 75
+        }
+      ]
     },
     {
       "logs": ""
@@ -744,7 +866,7 @@
       "parish_id": "0134"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -761,6 +883,14 @@
           "time": 1130
         },
         {
+          "day": "Sunday",
+          "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1100
+        },
+        {
           "day": "Monday",
           "time": 730
         },
@@ -775,10 +905,34 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Friday",
+          "time": 1700,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1400,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 800,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -795,10 +949,14 @@
       "parish_id": "0670"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 1630
+        },
         {
           "day": "Sunday",
           "time": 900
@@ -820,28 +978,38 @@
           "time": 815
         },
         {
-          "day": "Thursday",
-          "time": 900
-        },
-        {
           "day": "Friday",
           "time": 815
         },
         {
           "day": "Saturday",
           "time": 815
-        },
-        {
-          "day": "Saturday",
-          "time": 1630
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Tuesday",
+          "time": 1800,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 1700,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -884,7 +1052,7 @@
       "parish_id": "1786"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -911,10 +1079,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 900,
+          "duration": 240
+        }
+      ]
     },
     {
       "logs": ""
@@ -931,7 +1112,7 @@
       "parish_id": "1548"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -954,10 +1135,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Monday",
+          "time": 1900,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1800,
+          "duration": 30
+        }
+      ]
     },
     {
       "logs": ""
@@ -974,10 +1168,14 @@
       "parish_id": "20812"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Tuesday",
+          "time": 1600
+        },
         {
           "day": "Saturday",
           "time": 1600
@@ -985,18 +1183,27 @@
         {
           "day": "Sunday",
           "time": 1000
-        },
-        {
-          "day": "Wednesday",
-          "time": 1600
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 1300,
+          "duration": 420
+        }
+      ]
     },
     {
       "logs": ""
@@ -1039,7 +1246,7 @@
       "parish_id": "0242"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1144,7 +1351,7 @@
       "parish_id": "0689"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1206,7 +1413,14 @@
       ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 840,
+          "duration": 680
+        }
+      ]
     },
     {
       "logs": ""
@@ -1223,7 +1437,7 @@
       "parish_id": "1841"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1290,10 +1504,33 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Sunday",
+          "time": 700,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 900,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 1130,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 570
+        }
+      ]
     },
     {
       "logs": ""
@@ -1310,7 +1547,7 @@
       "parish_id": "1772"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1357,10 +1594,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 930,
+          "duration": 570
+        }
+      ]
     },
     {
       "logs": ""
@@ -1377,7 +1627,7 @@
       "parish_id": "0080"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1420,10 +1670,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 730,
+          "duration": 330
+        }
+      ]
     },
     {
       "logs": ""
@@ -1440,7 +1703,7 @@
       "parish_id": "1814"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1504,7 +1767,14 @@
       ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1000,
+          "duration": 1800
+        }
+      ]
     },
     {
       "logs": ""
@@ -1521,7 +1791,7 @@
       "parish_id": "0141"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1555,7 +1825,7 @@
         },
         {
           "day": "Thursday",
-          "time": 900
+          "time": 815
         },
         {
           "day": "Friday",
@@ -1564,10 +1834,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Wednesday",
+          "time": 815,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1430,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 815,
+          "duration": 525
+        }
+      ]
     },
     {
       "logs": ""
@@ -1610,7 +1898,7 @@
       "parish_id": "29676"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1645,10 +1933,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1800,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -1691,28 +1992,12 @@
       "parish_id": "0085"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
-          "day": "Monday",
-          "time": 730
-        },
-        {
-          "day": "Tuesday",
-          "time": 730
-        },
-        {
-          "day": "Wednesday",
-          "time": 730
-        },
-        {
-          "day": "Thursday",
-          "time": 730
-        },
-        {
-          "day": "Friday",
+          "day": "Weekdays",
           "time": 730
         },
         {
@@ -1734,10 +2019,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1800,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -1754,7 +2052,7 @@
       "parish_id": "st-paul-akron-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1775,20 +2073,20 @@
           "time": 830
         },
         {
-          "day": "Tuesday",
-          "time": 700
-        },
-        {
           "day": "Wednesday",
           "time": 830
         },
         {
-          "day": "Thursday",
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
           "time": 700
         },
         {
-          "day": "Friday",
-          "time": 830
+          "day": "Thursday",
+          "time": 700
         },
         {
           "day": "Friday",
@@ -1815,7 +2113,7 @@
         {
           "is24hour": false,
           "day": "Thursday",
-          "time": 700,
+          "time": 1900,
           "duration": 60
         }
       ]
@@ -1861,7 +2159,7 @@
       "parish_id": "26778"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1884,10 +2182,29 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1400,
+          "duration": 240
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 1400,
+          "duration": 240
+        }
+      ]
     },
     {
       "logs": ""
@@ -1904,7 +2221,7 @@
       "parish_id": "1137"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1931,10 +2248,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Tuesday",
+          "time": 1900,
+          "duration": 30
+        },
+        {
+          "day": "Saturday",
+          "time": 1100,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -1951,7 +2286,7 @@
       "parish_id": "1798"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -1990,10 +2325,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -2010,7 +2358,7 @@
       "parish_id": "5493"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2035,20 +2383,40 @@
           "time": 900
         },
         {
+          "day": "Monday",
+          "time": 1130
+        },
+        {
           "day": "Tuesday",
           "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 1130
         },
         {
           "day": "Wednesday",
           "time": 900
         },
         {
+          "day": "Wednesday",
+          "time": 1130
+        },
+        {
           "day": "Thursday",
           "time": 900
         },
         {
+          "day": "Thursday",
+          "time": 1130
+        },
+        {
           "day": "Friday",
           "time": 900
+        },
+        {
+          "day": "Friday",
+          "time": 1130
         },
         {
           "day": "Saturday",
@@ -2057,10 +2425,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 930,
+          "duration": 630
+        }
+      ]
     },
     {
       "logs": ""
@@ -2077,7 +2458,7 @@
       "parish_id": "1714"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2094,20 +2475,57 @@
           "time": 1100
         },
         {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
           "day": "Wednesday",
-          "time": 1200
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
         },
         {
           "day": "Friday",
-          "time": 1200
+          "time": 830
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 0,
+          "duration": 0
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 0,
+          "duration": 0
+        },
+        {
+          "is24hour": false,
+          "day": "Sunday",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -2124,7 +2542,7 @@
       "parish_id": "1572"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2159,10 +2577,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Sunday",
+          "time": 1430,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -2179,7 +2610,7 @@
       "parish_id": "20822"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2218,10 +2649,29 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1730,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -2238,7 +2688,7 @@
       "parish_id": "1639"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2281,10 +2731,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -2301,7 +2764,7 @@
       "parish_id": "st-mel-cleveland-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2361,7 +2824,7 @@
       "parish_id": "st-matthias-the-apostle-parma-oh"
     },
     {
-      "last_run_timestamp": "2024-07-05"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2387,7 +2850,7 @@
         },
         {
           "day": "Wednesday",
-          "time": 830
+          "time": 1830
         },
         {
           "day": "Thursday",
@@ -2412,9 +2875,9 @@
       "adore_times": [
         {
           "is24hour": false,
-          "day": "none",
-          "time": 0,
-          "duration": 0
+          "day": "Wednesday",
+          "time": 700,
+          "duration": 60
         }
       ]
     },
@@ -2433,7 +2896,7 @@
       "parish_id": "1101"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2447,18 +2910,10 @@
         },
         {
           "day": "Sunday",
-          "time": 1200
-        },
-        {
-          "day": "Sunday",
           "time": 1700
         },
         {
           "day": "Monday",
-          "time": 700
-        },
-        {
-          "day": "Tuesday",
           "time": 700
         },
         {
@@ -2467,15 +2922,11 @@
         },
         {
           "day": "Thursday",
-          "time": 900
+          "time": 700
         },
         {
           "day": "Friday",
           "time": 700
-        },
-        {
-          "day": "Saturday",
-          "time": 830
         },
         {
           "day": "Saturday",
@@ -2484,10 +2935,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Sunday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 780
+        }
+      ]
     },
     {
       "logs": ""
@@ -2504,7 +2973,7 @@
       "parish_id": "1071"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2521,12 +2990,32 @@
           "time": 745
         },
         {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
           "day": "Thursday",
-          "time": 900
+          "time": 745
+        },
+        {
+          "day": "Thursday",
+          "time": 1930
         },
         {
           "day": "Friday",
           "time": 745
+        },
+        {
+          "day": "Friday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
         },
         {
           "day": "Saturday",
@@ -2538,7 +3027,15 @@
         },
         {
           "day": "Sunday",
+          "time": 800
+        },
+        {
+          "day": "Sunday",
           "time": 900
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
         },
         {
           "day": "Sunday",
@@ -2551,10 +3048,45 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Monday",
+          "time": 1900,
+          "duration": 25
+        },
+        {
+          "day": "Saturday",
+          "time": 1430,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1830,
+          "duration": 90
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1000,
+          "duration": 300
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1700,
+          "duration": 120
+        }
+      ]
     },
     {
       "logs": ""
@@ -2571,7 +3103,7 @@
       "parish_id": "st-mary-of-the-falls-olmsted-falls-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2643,7 +3175,7 @@
       "parish_id": "0886"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2694,9 +3226,9 @@
       "adore_times": [
         {
           "is24hour": false,
-          "day": "Monday",
-          "time": 900,
-          "duration": 480
+          "day": "Thursday",
+          "time": 1000,
+          "duration": 240
         }
       ]
     },
@@ -2715,7 +3247,7 @@
       "parish_id": "1532"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2750,10 +3282,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 830,
+          "duration": 750
+        }
+      ]
     },
     {
       "logs": ""
@@ -2770,7 +3315,7 @@
       "parish_id": "st-mary-painesville-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2890,7 +3435,7 @@
       "parish_id": "st-mary-hudson-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2949,15 +3494,15 @@
       "adore_times": [
         {
           "is24hour": false,
-          "day": "Monday",
-          "time": 1830,
-          "duration": 60
-        },
-        {
-          "is24hour": false,
           "day": "Thursday",
           "time": 1100,
           "duration": 480
+        },
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1830,
+          "duration": 60
         }
       ]
     },
@@ -2976,7 +3521,7 @@
       "parish_id": "st-mary-elyria-oh"
     },
     {
-      "last_run_timestamp": "2024-07-05"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -2994,23 +3539,23 @@
         },
         {
           "day": "Monday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Tuesday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Wednesday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Thursday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Friday",
-          "time": 830
+          "time": 900
         }
       ]
     },
@@ -3026,8 +3571,8 @@
     {
       "adore_times": [
         {
-          "is24hour": true,
-          "day": "all",
+          "is24hour": false,
+          "day": "none",
           "time": 0,
           "duration": 0
         }
@@ -3048,7 +3593,7 @@
       "parish_id": "st-mary-cleveland-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3096,21 +3641,16 @@
           "day": "Saturday",
           "time": 1600,
           "duration": 60
-        },
-        {
-          "day": "Sunday",
-          "time": 930,
-          "duration": 30
         }
       ]
     },
     {
       "adore_times": [
         {
-          "is24hour": false,
-          "day": "Wednesday",
-          "time": 800,
-          "duration": 60
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
         }
       ]
     },
@@ -3129,7 +3669,7 @@
       "parish_id": "23926"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3172,10 +3712,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Wednesday",
+          "time": 1800,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1230,
+          "duration": 390
+        }
+      ]
     },
     {
       "logs": ""
@@ -3192,7 +3750,7 @@
       "parish_id": "st-mary-berea-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3244,7 +3802,7 @@
         {
           "is24hour": false,
           "day": "Thursday",
-          "time": 1200,
+          "time": 1500,
           "duration": 60
         }
       ]
@@ -3264,7 +3822,7 @@
       "parish_id": "1136"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3291,10 +3849,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -3337,7 +3908,7 @@
       "parish_id": "1584"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3368,10 +3939,59 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 700,
+          "duration": 840
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 700,
+          "duration": 840
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 700,
+          "duration": 840
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 700,
+          "duration": 840
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 700,
+          "duration": 840
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 700,
+          "duration": 720
+        },
+        {
+          "is24hour": false,
+          "day": "Sunday",
+          "time": 700,
+          "duration": 720
+        }
+      ]
     },
     {
       "logs": ""
@@ -3388,7 +4008,7 @@
       "parish_id": "st-martin-of-tours-maple-heights-oh"
     },
     {
-      "last_run_timestamp": "2024-07-05"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3453,6 +4073,11 @@
           "day": "Saturday",
           "time": 1730,
           "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 0,
+          "duration": 0
         }
       ]
     },
@@ -3481,26 +4106,10 @@
       "parish_id": "1776"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
-        {
-          "day": "Monday",
-          "time": 830
-        },
-        {
-          "day": "Tuesday",
-          "time": 645
-        },
-        {
-          "day": "Thursday",
-          "time": 830
-        },
-        {
-          "day": "Friday",
-          "time": 645
-        },
         {
           "day": "Saturday",
           "time": 1600
@@ -3511,19 +4120,58 @@
         },
         {
           "day": "Sunday",
-          "time": 1000
+          "time": 1130
         },
         {
-          "day": "Sunday",
-          "time": 1130
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 645
+        },
+        {
+          "day": "Friday",
+          "time": 645
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -3540,7 +4188,7 @@
       "parish_id": "st-matthew-akron-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3608,7 +4256,7 @@
       "parish_id": "0568"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3631,10 +4279,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Friday",
+          "time": 1230,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -3651,7 +4312,7 @@
       "parish_id": "1746"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3690,10 +4351,47 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 800,
+          "duration": 690
+        },
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 800,
+          "duration": 690
+        },
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 800,
+          "duration": 690
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 800,
+          "duration": 690
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 800,
+          "duration": 570
+        }
+      ]
     },
     {
       "logs": ""
@@ -3762,13 +4460,13 @@
       "parish_id": "1704"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
           "day": "Monday",
-          "time": 830
+          "time": 1830
         },
         {
           "day": "Tuesday",
@@ -3788,11 +4486,11 @@
         },
         {
           "day": "Saturday",
-          "time": 1630
+          "time": 1700
         },
         {
           "day": "Sunday",
-          "time": 830
+          "time": 900
         },
         {
           "day": "Sunday",
@@ -3801,10 +4499,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 180
+        }
+      ]
     },
     {
       "logs": ""
@@ -3847,7 +4558,7 @@
       "parish_id": "0169"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3878,10 +4589,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 1400,
+          "duration": 180
+        }
+      ]
     },
     {
       "logs": ""
@@ -3898,7 +4622,7 @@
       "parish_id": "1352"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -3937,10 +4661,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1000,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -3957,12 +4694,12 @@
       "parish_id": "1414"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
-          "day": "Sunday",
+          "day": "Saturday",
           "time": 1700
         },
         {
@@ -4000,10 +4737,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 900,
+          "duration": 540
+        }
+      ]
     },
     {
       "logs": ""
@@ -4020,7 +4770,7 @@
       "parish_id": "0116"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4063,10 +4813,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        },
+        {
+          "day": "Thursday",
+          "time": 1830,
+          "duration": 90
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": true,
+          "day": "all",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -4083,7 +4851,7 @@
       "parish_id": "0138"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4118,10 +4886,34 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Wednesday",
+          "time": 845,
+          "duration": 45
+        },
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Tuesday",
+          "time": 900,
+          "duration": 660
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 900,
+          "duration": 1440
+        }
+      ]
     },
     {
       "logs": ""
@@ -4138,7 +4930,7 @@
       "parish_id": "st-joseph-amherst-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4183,13 +4975,13 @@
     {
       "conf_times": [
         {
-          "day": "Saturday",
-          "time": 1100,
+          "day": "Thursday",
+          "time": 1930,
           "duration": 60
         },
         {
-          "day": "Thursday",
-          "time": 1930,
+          "day": "Saturday",
+          "time": 1100,
           "duration": 60
         }
       ]
@@ -4243,7 +5035,7 @@
       "parish_id": "1142"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4266,14 +5058,70 @@
         {
           "day": "Sunday",
           "time": 1215
+        },
+        {
+          "day": "Monday",
+          "time": 800
+        },
+        {
+          "day": "Monday",
+          "time": 1100
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 800
+        },
+        {
+          "day": "Wednesday",
+          "time": 1100
+        },
+        {
+          "day": "Thursday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 800
+        },
+        {
+          "day": "Friday",
+          "time": 1100
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1445,
+          "duration": 60
+        },
+        {
+          "day": "Wednesday",
+          "time": 1900,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 800,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 800,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -4290,7 +5138,7 @@
       "parish_id": "0164"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4321,14 +5169,41 @@
         {
           "day": "Sunday",
           "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1700
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 900,
+          "duration": 60
+        },
+        {
+          "day": "Monday",
+          "time": 1715,
+          "duration": 45
+        },
+        {
+          "day": "Friday",
+          "time": 1715,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 930,
+          "duration": 495
+        }
+      ]
     },
     {
       "logs": ""
@@ -4397,7 +5272,7 @@
       "parish_id": "saint-john-bosco-parma-heights-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4452,10 +5327,10 @@
     {
       "adore_times": [
         {
-          "is24hour": true,
-          "day": "all",
-          "time": 0,
-          "duration": 0
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 600,
+          "duration": 960
         }
       ]
     },
@@ -4474,7 +5349,7 @@
       "parish_id": "2452"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4497,10 +5372,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -4517,7 +5405,7 @@
       "parish_id": "1130"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4552,10 +5440,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 800,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Monday",
+          "time": 1730,
+          "duration": 30
+        }
+      ]
     },
     {
       "logs": ""
@@ -4572,7 +5478,7 @@
       "parish_id": "0216"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4593,24 +5499,46 @@
           "time": 800
         },
         {
-          "day": "Tuesday",
-          "time": 900
-        },
-        {
           "day": "Thursday",
           "time": 800
         },
         {
           "day": "Friday",
           "time": 800
+        },
+        {
+          "day": "Tuesday",
+          "time": 900
+        },
+        {
+          "day": "Tuesday",
+          "time": 800
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        },
+        {
+          "day": "Saturday",
+          "time": 1515,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 1830,
+          "duration": 120
+        }
+      ]
     },
     {
       "logs": ""
@@ -4627,10 +5555,22 @@
       "parish_id": "st-jerome-cleveland-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Saturday",
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1600
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
         {
           "day": "Monday",
           "time": 830
@@ -4642,14 +5582,6 @@
         {
           "day": "Friday",
           "time": 830
-        },
-        {
-          "day": "Saturday",
-          "time": 1600
-        },
-        {
-          "day": "Sunday",
-          "time": 1000
         }
       ]
     },
@@ -4669,12 +5601,6 @@
           "day": "Wednesday",
           "time": 1900,
           "duration": 60
-        },
-        {
-          "is24hour": false,
-          "day": "none",
-          "time": 0,
-          "duration": 0
         }
       ]
     },
@@ -4719,7 +5645,7 @@
       "parish_id": "1311"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4754,10 +5680,28 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        },
+        {
+          "day": "Sunday",
+          "time": 1000,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
@@ -4774,7 +5718,7 @@
       "parish_id": "0599"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -4833,10 +5777,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Wednesday",
+          "time": 730,
+          "duration": 690
+        }
+      ]
     },
     {
       "logs": ""
@@ -4879,13 +5836,37 @@
       "parish_id": "1286"
     },
     {
-      "last_run_timestamp": "2024-06-29"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
         {
+          "day": "Monday",
+          "time": 700
+        },
+        {
+          "day": "Tuesday",
+          "time": 1900
+        },
+        {
+          "day": "Wednesday",
+          "time": 700
+        },
+        {
+          "day": "Thursday",
+          "time": 1900
+        },
+        {
+          "day": "Friday",
+          "time": 700
+        },
+        {
           "day": "Saturday",
-          "time": 1645
+          "time": 830
+        },
+        {
+          "day": "Saturday",
+          "time": 1700
         },
         {
           "day": "Sunday",
@@ -4893,19 +5874,32 @@
         },
         {
           "day": "Sunday",
-          "time": 900
+          "time": 930
         },
         {
           "day": "Sunday",
-          "time": 1100
+          "time": 1130
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1545,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 730,
+          "duration": 180
+        }
+      ]
     },
     {
       "logs": ""
@@ -4948,10 +5942,18 @@
       "parish_id": "st-frances-xavier-cabrini-parish-lorain-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
+        {
+          "day": "Tuesday",
+          "time": 730
+        },
+        {
+          "day": "Wednesday",
+          "time": 730
+        },
         {
           "day": "Thursday",
           "time": 900
@@ -4966,7 +5968,15 @@
         },
         {
           "day": "Sunday",
-          "time": 2330
+          "time": 800
+        },
+        {
+          "day": "Sunday",
+          "time": 1000
+        },
+        {
+          "day": "Sunday",
+          "time": 1130
         }
       ]
     },
@@ -4979,7 +5989,12 @@
         },
         {
           "day": "Sunday",
-          "time": 1000,
+          "time": 900,
+          "duration": 30
+        },
+        {
+          "day": "Sunday",
+          "time": 1100,
           "duration": 30
         }
       ]
@@ -5009,7 +6024,7 @@
       "parish_id": "1241"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5052,10 +6067,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1530,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 1930,
+          "duration": 660
+        }
+      ]
     },
     {
       "logs": ""
@@ -5072,7 +6100,7 @@
       "parish_id": "0523"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5111,10 +6139,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -5157,7 +6198,7 @@
       "parish_id": "1734"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5192,10 +6233,23 @@
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 45
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "none",
+          "time": 0,
+          "duration": 0
+        }
+      ]
     },
     {
       "logs": ""
@@ -5238,7 +6292,7 @@
       "parish_id": "st-elizabeth-ann-seton-columbia-station-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5253,18 +6307,6 @@
         {
           "day": "Sunday",
           "time": 1100
-        },
-        {
-          "day": "Holy Day",
-          "time": 1600
-        },
-        {
-          "day": "Holy Day",
-          "time": 900
-        },
-        {
-          "day": "Holy Day",
-          "time": 1900
         },
         {
           "day": "Tuesday",
@@ -5370,7 +6412,7 @@
       "parish_id": "1285"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5405,14 +6447,85 @@
         {
           "day": "Sunday",
           "time": 1100
+        },
+        {
+          "day": "Sunday",
+          "time": 1630
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1500,
+          "duration": 60
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 2300,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 0,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 100,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 300,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 400,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Friday",
+          "time": 2300,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 0,
+          "duration": 300
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 2000,
+          "duration": 120
+        },
+        {
+          "is24hour": false,
+          "day": "Saturday",
+          "time": 2300,
+          "duration": 60
+        },
+        {
+          "is24hour": false,
+          "day": "Sunday",
+          "time": 0,
+          "duration": 300
+        }
+      ]
     },
     {
       "logs": ""
@@ -5429,7 +6542,7 @@
       "parish_id": "st-dominic-shaker-heights-oh"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5549,7 +6662,7 @@
       "parish_id": "0882"
     },
     {
-      "last_run_timestamp": "2024-07-04"
+      "last_run_timestamp": "2024-07-13"
     },
     {
       "mass_times": [
@@ -5568,14 +6681,52 @@
         {
           "day": "Sunday",
           "time": 1200
+        },
+        {
+          "day": "Monday",
+          "time": 830
+        },
+        {
+          "day": "Tuesday",
+          "time": 830
+        },
+        {
+          "day": "Wednesday",
+          "time": 830
+        },
+        {
+          "day": "Thursday",
+          "time": 830
+        },
+        {
+          "day": "Friday",
+          "time": 830
         }
       ]
     },
     {
-      "conf_times": ""
+      "conf_times": [
+        {
+          "day": "Saturday",
+          "time": 1600,
+          "duration": 60
+        },
+        {
+          "day": "Sunday",
+          "time": 930,
+          "duration": 30
+        }
+      ]
     },
     {
-      "adore_times": ""
+      "adore_times": [
+        {
+          "is24hour": false,
+          "day": "Thursday",
+          "time": 900,
+          "duration": 60
+        }
+      ]
     },
     {
       "logs": ""
