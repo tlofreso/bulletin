@@ -9,6 +9,8 @@ env:
   BULLETIN_ASSISTANT_ID: ${{ secrets.BULLETIN_ASSISTANT_ID }}
   NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
   PARISH_DB_ID: ${{ secrets.PARISH_DB_ID }}
+  AZURE_ENDPOINT: ${{ secrets.AZURE_ENDPOINT }}
+  AZURE_KEY: ${{ secrets.AZURE_KEY }}
 jobs:
   Masstime-Extractor:
     runs-on: ubuntu-latest

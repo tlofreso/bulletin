@@ -6,7 +6,9 @@ import time
 from tempfile import TemporaryFile, NamedTemporaryFile
 
 from download_bulletins import download_bulletin
-from info_extract import get_times, count_pages
+#from ocr import analyze_document
+#from info_extract import get_times, count_pages
+from structured_output_extract import count_pages, get_times
 from notion_stuff import get_notion_client_from_environment, get_all_parishes, get_individual_parish, upload_parish_analysis
 from openai import Client
 from rich import print
@@ -93,7 +95,7 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
         if adoration:
             activities_to_get.append("adore")
 
-        mass_times, confession_times, adoration_times = get_times(openai_client, config.bulletin_assistant_id, activities_to_get, temp_file)
+        mass_times, confession_times, adoration_times = get_times(openai_client, activities_to_get, temp_file)
 
         log(f"Extracted {len(mass_times)} mass times.", console=True)
         log(f"Extracted {len(confession_times)} confession times.", console=True)
