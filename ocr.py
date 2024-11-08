@@ -13,3 +13,8 @@ def analyze_document(f):
     poller = CLIENT.begin_analyze_document("prebuilt-layout", AnalyzeDocumentRequest(bytes_source=f.read()), output_content_format=ContentFormat.MARKDOWN)
     result = poller.result().as_dict()
     return result
+
+def analyze_document_read(f):
+    poller = CLIENT.begin_analyze_document("prebuilt-read", AnalyzeDocumentRequest(bytes_source=f.read()))
+    result = poller.result().as_dict()
+    return result
