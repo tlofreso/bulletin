@@ -10,6 +10,7 @@ from ocr import analyze_document
 #from openai import Client
 import openai
 
+INFO_PROMPT = """What do I need to know to learn more about this parish or to find it on a map?"""
 MASSTIME_PROMPT = """What are the regular Mass Times at this Parish?"""
 CONFESSIONTIME_PROMPT = """What are the regular Confession Times at this Parish?"""
 ADORATION_PROMPT = """When is Eucharistic Adoration held at this parish?  The "day" attribute should be the name of the day, and the "time" attribute should be an int representing 24hr time.  (900 is 9am, 1400 is 2pm, etc.) The "duration" attribute should be an int representing the number of minutes between the start and end of adoration (for example, if adoration goes from 3:00pm to 4:00pm, the duration would be 60).  If it appears adoration is held all fo the time, for 24 hours a day, or "perpetually", then set the "is24hour" attribute to the boolean true, "day" attribute to all, and the rest of the attributes to 0. If there is no adoration at this parish, then set the "is24hour" attribute to the boolean false, "day" to "none", and time and duration to 0."""
@@ -38,8 +39,18 @@ class AdorationTime(BaseModel):
 class AdorationTimes(BaseModel):
     adorations: List[AdorationTime] = Field(..., description="List of AdorationTime instances representing individual adoration schedules")
 
+class ParishInfo(BaseModel):
+    address: str = Field(..., description="The street address of the parish")
+    city: str = Field(..., description="The city the parish is in")
+    zipcode: str = Field(..., description="The parish zip code")
+    phone: str = Field(..., description="The main phone number for contacting the parish")
+    website: str = Field(..., description="The main parish website")
+
+class ParishInfo2(BaseModel):
+    metadata: List[ParishInfo] = Field(..., description="Summary of the metadata gathered")
+
 def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes]):
-    response_masstimes, response_adorationtimes, response_confessiontimes = ([],[],[])
+    response_masstimes, response_adorationtimes, response_confessiontimes, response_info = ([],[],[],[])
     bulletin_md = analyze_document(bulletin_pdf)["content"]
 
     for event in activity:
@@ -53,6 +64,9 @@ def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes])
         if event in ["adore"]:
             prompt = ADORATION_PROMPT
             schema = AdorationTimes
+        if event in ["info"]:
+            prompt = INFO_PROMPT
+            schema = ParishInfo2
 
         print(event)
         completion = client.beta.chat.completions.parse(
@@ -66,7 +80,7 @@ def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes])
         )
 
         response = completion.choices[0].message.parsed
-        print(response)
+        # print(response)
 
         if event in ["mass"]:
             response_masstimes = response.masses
@@ -74,8 +88,10 @@ def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes])
             response_confessiontimes = response.confessions
         if event in ["adore"]:
             response_adorationtimes = response.adorations
+        if event in ["info"]:
+            response_info = response.metadata
 
-    return(response_masstimes, response_confessiontimes, response_adorationtimes)
+    return(response_masstimes, response_confessiontimes, response_adorationtimes, response_info)
 
 def count_pages(pdf:IO[bytes]) -> int:
     try:

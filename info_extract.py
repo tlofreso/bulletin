@@ -9,6 +9,18 @@ from tempfile import NamedTemporaryFile
 #from openai import Client
 import openai
 
+PARISH_INFO_PROMPT = """Pull relevant information about this parish and return the information as JSON. Find the following information, and format it like so:
+[
+ {
+    "address": {Street Address},
+    "city": {City},
+    "zip_code": {Zip Code},
+    "phone": {Phone Number},
+    "website": {Website URL}
+ }
+]
+"""
+
 MASSTIME_PROMPT = """What are the regular Mass Times at this Parish?  Provide output as a valid JSON array in which every object in the array represents a single mass time.  Include attributes for the day of the week and the time of day.  The "day" attribute should be the name of the day, and the "time" attribute should be an int representing 24hr time.  (900 is 9am, 1400 is 2pm, etc.)
 
 Example Response:
@@ -54,6 +66,13 @@ Example Response:
 Do not include any content in the response other than the JSON itself.
 """
 
+class ParishInfo(BaseModel):
+    address: str
+    city: str
+    zipcode: str
+    phone: str
+    website: str
+
 class MassTime(BaseModel):
     day: str  # "Monday"
     time: int # 1630 is 4:30pm. All times local
@@ -70,7 +89,7 @@ class AdorationTime(BaseModel):
     duration: int #Number of minutes for adoration
 
 def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulletin_pdf:IO[bytes]) -> List[MassTime]:
-    response_masstimes, response_adorationtimes, response_confessiontimes = ([],[],[])
+    response_masstimes, response_adorationtimes, response_confessiontimes, response_info = ([],[],[],[])
     assistant = client.beta.assistants.retrieve(assistant_id)
     with NamedTemporaryFile('w+b', suffix=".pdf") as bulletin_with_suffix:
         bulletin_with_suffix.write(bulletin_pdf.read())
@@ -101,6 +120,9 @@ def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulle
             prompt = CONFESSIONTIME_PROMPT
         if event in ["adore"]:
             prompt = ADORATION_PROMPT
+        if event in ["info"]:
+            prompt = PARISH_INFO_PROMPT
+
         client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
@@ -148,6 +170,8 @@ def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulle
                 response_confessiontimes = [ConfessionTime.model_validate_json(json.dumps(j)) for j in response_json]
             if event in ["adore"]:
                 response_adorationtimes = [AdorationTime.model_validate_json(json.dumps(a)) for a in response_json]
+            if event in ["info"]:
+                response_info = [ParishInfo.model_validate_json(json.dumps(i)) for i in response_json]
         except ValueError:
             print(f'Something went wrong parsing the JSON: {json_str}')
             print(f'The OpenAI response might be helpful: {response_string}')
@@ -178,7 +202,7 @@ def get_times(client: openai.Client, assistant_id:str, activity:List[str], bulle
     client.files.delete(uploaded_bulletin.id)
     client.beta.threads.delete(thread.id)
 
-    return(response_masstimes, response_confessiontimes, response_adorationtimes)
+    return(response_masstimes, response_confessiontimes, response_adorationtimes, response_info)
 
 def count_pages(pdf:IO[bytes]) -> int:
     try:

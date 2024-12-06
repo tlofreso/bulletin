@@ -6,7 +6,7 @@ from typing import List
 from notion_client import Client
 from pydantic import BaseModel
 
-from info_extract import MassTime, ConfessionTime, AdorationTime
+from info_extract import MassTime, ConfessionTime, AdorationTime, ParishInfo
 
 database_id = "00f6fa861276497580fbf6ef48bc53e9"
 
@@ -26,6 +26,11 @@ class ParishRow(BaseModel):
 class ParishActivities(BaseModel):
     name:str
     enabled:bool
+    coords:str
+    address:str
+    city:str
+    zip_code:int
+    contact:str
     parish_id:str
     last_run_timestamp:str
     mass_times:str
@@ -172,7 +177,13 @@ def extract_all_parish_info(client:Client, database_id:str, cursor=None) -> List
             conf_times = get_row_property_value(row, "Confession Testing"),
             adore_times = get_row_property_value(row, "Adoration Testing"),
             logs = get_row_property_value(row, "GPT Logs"),
-            enabled = get_row_property_value(row, "Enable")
+            enabled = get_row_property_value(row, "Enable"),
+            coords = get_row_property_value(row, "LonLat"),
+            address = get_row_property_value(row, "Street Address"),
+            city = get_row_property_value(row, "City"),
+            zip_code = get_row_property_value(row, "Zip Code"),
+            contact = get_row_property_value(row, "Phone Number")
+            #add one for www
         ))
 
     if response["has_more"] == True:
@@ -201,7 +212,12 @@ def get_individual_parish(client:Client, database_id:str, parish_id:str, cursor=
             enabled   = get_row_property_value(row, "Enable"),
             parish_id = get_row_property_value(row, "ParishID"),
             last_run_timestamp = date.fromisoformat(last_run_timestamp_str),
-            publisher = get_row_property_value(row, "Bulletin Publisher")
+            publisher = get_row_property_value(row, "Bulletin Publisher"),
+            coords = get_row_property_value(row, "LonLat"),
+            address = get_row_property_value(row, "Street Address"),
+            city = get_row_property_value(row, "City"),
+            zip_code = get_row_property_value(row, "Zip Code"),
+            contact = get_row_property_value(row, "Phone Number")
         ))
     
     return results
@@ -255,6 +271,25 @@ def upload_parish_analysis(client:Client, db_id, parish_id:str, mass_times:List[
 
     updateContent(client, parish_page_key, updated_properties)
 
+def upload_parish_info(client:Client, db_id, parish_id:str, parish_info:List[ParishInfo]):
+    parish_page_key = get_parish_page_key(client, db_id, parish_id)
+    # info_text = json.dumps([i.model_dump() for i in parish_info])
+    info = [i.model_dump() for i in parish_info]
+    address = info[0]["address"]
+    city = info[0]["city"]
+    zipcode = info[0]["zipcode"]
+    phone = info[0]["phone"]
+    website = info[0]["website"]
+
+    # print("info text:", info_text)
+    updated_properties = {
+        "Street Address": get_text_property_json(address),
+        "City": get_text_property_json(city),
+        "Zip Code": get_text_property_json(zipcode),
+        "Phone Number": get_text_property_json(phone),
+        "Website": get_url_property_json(website)
+    }
+    updateContent(client, parish_page_key, updated_properties)
 
 if __name__ == "__main__":
     from rich import print
