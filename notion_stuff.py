@@ -281,7 +281,7 @@ def upload_parish_info(client:Client, db_id, parish_id:str, parish_info:List[Par
     city = info[0]["city"]
     zipcode = info[0]["zipcode"]
     phone = info[0]["phone"]
-    www = info[0]["www"]
+    www = info[0]["website"]
 
     # print("info text:", info_text)
     updated_properties = {
