@@ -29,8 +29,9 @@ class ParishActivities(BaseModel):
     coords:str
     address:str
     city:str
-    zip_code:int
-    contact:str
+    zip_code:str
+    phone:str
+    www:str
     parish_id:str
     last_run_timestamp:str
     mass_times:str
@@ -182,8 +183,8 @@ def extract_all_parish_info(client:Client, database_id:str, cursor=None) -> List
             address = get_row_property_value(row, "Street Address"),
             city = get_row_property_value(row, "City"),
             zip_code = get_row_property_value(row, "Zip Code"),
-            contact = get_row_property_value(row, "Phone Number")
-            #add one for www
+            phone = get_row_property_value(row, "Phone Number"),
+            www = get_row_property_value(row, "Website")
         ))
 
     if response["has_more"] == True:
@@ -213,11 +214,12 @@ def get_individual_parish(client:Client, database_id:str, parish_id:str, cursor=
             parish_id = get_row_property_value(row, "ParishID"),
             last_run_timestamp = date.fromisoformat(last_run_timestamp_str),
             publisher = get_row_property_value(row, "Bulletin Publisher"),
-            coords = get_row_property_value(row, "LonLat"),
-            address = get_row_property_value(row, "Street Address"),
-            city = get_row_property_value(row, "City"),
-            zip_code = get_row_property_value(row, "Zip Code"),
-            contact = get_row_property_value(row, "Phone Number")
+            coords    = get_row_property_value(row, "LonLat"),
+            address   = get_row_property_value(row, "Street Address"),
+            city      = get_row_property_value(row, "City"),
+            zip_code  = get_row_property_value(row, "Zip Code"),
+            phone     = get_row_property_value(row, "Phone Number"),
+            www       = get_row_property_value(row, "Website")
         ))
     
     return results
@@ -279,7 +281,7 @@ def upload_parish_info(client:Client, db_id, parish_id:str, parish_info:List[Par
     city = info[0]["city"]
     zipcode = info[0]["zipcode"]
     phone = info[0]["phone"]
-    website = info[0]["website"]
+    www = info[0]["www"]
 
     # print("info text:", info_text)
     updated_properties = {
@@ -287,7 +289,7 @@ def upload_parish_info(client:Client, db_id, parish_id:str, parish_info:List[Par
         "City": get_text_property_json(city),
         "Zip Code": get_text_property_json(zipcode),
         "Phone Number": get_text_property_json(phone),
-        "Website": get_url_property_json(website)
+        "Website": get_text_property_json(www)
     }
     updateContent(client, parish_page_key, updated_properties)
 
