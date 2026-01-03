@@ -5,7 +5,7 @@ from typing import List, IO
 from pydantic import BaseModel, Field
 import PyPDF2
 from tempfile import NamedTemporaryFile
-from ocr import analyze_document
+from ocr_local import analyze_document
 
 #from openai import Client
 import openai
