@@ -63,6 +63,7 @@ notion_to_app.py / notion_to_json.py (export)
 - `ocr_local.py` - Local OCR using Marker (PDF→markdown), used by default
 - `ocr_client.py` - Client for remote OCR server (used when `OCR_SERVER_URL` is set)
 - `ocr_server/` - FastAPI server for remote OCR processing (see below)
+- `ollama/` - Docker setup for remote Ollama LLM server
 - `ocr.py` - Azure Document Intelligence wrapper (legacy, requires Azure credentials)
 - `parishIDs.csv` - Source list of 820+ parish IDs across 6 dioceses
 
@@ -73,7 +74,8 @@ notion_to_app.py / notion_to_json.py (export)
 - `ParishInfo`: address, city, zipcode, phone, website
 
 **External Services:**
-- OpenAI API (GPT-4o-2024-08-06) - Structured extraction
+- OpenAI API (GPT-4o-2024-08-06) - Structured extraction (default)
+- Ollama with Qwen 2.5 - Local LLM alternative for extraction (optional)
 - Marker (local) - PDF to markdown OCR, runs locally via `ocr_local.py`
 - Notion API - Parish database storage
 
@@ -82,6 +84,11 @@ notion_to_app.py / notion_to_json.py (export)
 Required in `.env` (see `.env.template`):
 - `OPENAI_API_KEY`, `BULLETIN_ASSISTANT_ID`
 - `NOTION_API_KEY`, `PARISH_DB_ID`
+
+Optional:
+- `OCR_SERVER_URL` - Remote OCR server URL (see Remote OCR Server section)
+- `OLLAMA_BASE_URL` - Use local Ollama instead of OpenAI (e.g., `http://localhost:11434/v1`)
+- `OLLAMA_MODEL` - Ollama model to use (default: `qwen2.5`)
 
 Note: Marker OCR downloads ~2GB of models to `~/.cache/huggingface/` on first run.
 
@@ -118,3 +125,22 @@ If `OCR_SERVER_URL` is not set, local Marker OCR is used (default behavior).
 - `POST /jobs` - Submit PDF, returns `{job_id}`
 - `GET /jobs/{job_id}` - Get job status/result
 - `GET /health` - Health check with queue status
+
+## Remote Ollama Server (Optional)
+
+Run Ollama on a dedicated GPU server for LLM extraction.
+
+**Setup:**
+```bash
+# On the Ollama server
+cd ollama
+chmod +x setup.sh
+./setup.sh  # Starts container and pulls qwen2.5 model
+```
+
+**Configuration:**
+Set `OLLAMA_BASE_URL` in `.env` to point to the remote server:
+```bash
+OLLAMA_BASE_URL=http://192.168.1.100:11434/v1
+OLLAMA_MODEL=qwen2.5
+```

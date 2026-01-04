@@ -13,8 +13,11 @@ if os.environ.get("OCR_SERVER_URL"):
 else:
     from ocr_local import analyze_document
 
-#from openai import Client
 import openai
+
+# LLM configuration: Use Ollama if OLLAMA_BASE_URL is set, otherwise OpenAI
+OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL")  # e.g., http://localhost:11434/v1
+OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "qwen2.5")
 
 INFO_PROMPT = """What do I need to know to learn more about this parish or to find it on a map?"""
 MASSTIME_PROMPT = """What are the regular Mass Times at this Parish?"""
@@ -55,12 +58,63 @@ class ParishInfo(BaseModel):
 class ParishInfo2(BaseModel):
     metadata: List[ParishInfo] = Field(..., description="Summary of the metadata gathered")
 
-def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes]):
-    response_masstimes, response_adorationtimes, response_confessiontimes, response_info = ([],[],[],[])
+
+def get_ollama_client():
+    """Create an OpenAI client configured for Ollama"""
+    return openai.Client(
+        base_url=OLLAMA_BASE_URL,
+        api_key="ollama"  # Ollama doesn't require a real key
+    )
+
+
+def extract_with_ollama(client: openai.Client, prompt: str, schema: type[BaseModel], content: str):
+    """Extract structured data using Ollama with JSON mode"""
+    schema_json = schema.model_json_schema()
+
+    system_prompt = f"""{prompt}
+
+You must respond with valid JSON matching this schema:
+{json.dumps(schema_json, indent=2)}
+
+Respond ONLY with the JSON object, no other text."""
+
+    completion = client.chat.completions.create(
+        model=OLLAMA_MODEL,
+        messages=[
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": content},
+        ],
+        response_format={"type": "json_object"},
+    )
+
+    response_text = completion.choices[0].message.content
+    response_json = json.loads(response_text)
+    return schema.model_validate(response_json)
+
+
+def extract_with_openai(client: openai.Client, prompt: str, schema: type[BaseModel], content: str):
+    """Extract structured data using OpenAI's native structured output"""
+    completion = client.beta.chat.completions.parse(
+        model="gpt-4o-2024-08-06",
+        messages=[
+            {"role": "system", "content": prompt},
+            {"role": "user", "content": content},
+        ],
+        response_format=schema,
+    )
+    return completion.choices[0].message.parsed
+
+
+def get_times(client: openai.Client, activity: List[str], bulletin_pdf: IO[bytes]):
+    response_masstimes, response_adorationtimes, response_confessiontimes, response_info = ([], [], [], [])
     bulletin_md = analyze_document(bulletin_pdf)["content"]
 
+    # Choose extraction method based on configuration
+    use_ollama = OLLAMA_BASE_URL is not None
+    extract_fn = extract_with_ollama if use_ollama else extract_with_openai
+
     for event in activity:
-        prompt = MASSTIME_PROMPT # etc
+        prompt = MASSTIME_PROMPT
         if event in ["mass"]:
             prompt = MASSTIME_PROMPT
             schema = MassTimes
@@ -75,18 +129,7 @@ def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes])
             schema = ParishInfo2
 
         print(event)
-        completion = client.beta.chat.completions.parse(
-
-            model="gpt-4o-2024-08-06",
-            messages=[
-                {"role": "system", "content": prompt},
-                {"role": "user", "content": bulletin_md},
-            ],
-            response_format=schema,
-        )
-
-        response = completion.choices[0].message.parsed
-        # print(response)
+        response = extract_fn(client, prompt, schema, bulletin_md)
 
         if event in ["mass"]:
             response_masstimes = response.masses
@@ -97,7 +140,7 @@ def get_times(client: openai.Client, activity:List[str], bulletin_pdf:IO[bytes])
         if event in ["info"]:
             response_info = response.metadata
 
-    return(response_masstimes, response_confessiontimes, response_adorationtimes, response_info)
+    return (response_masstimes, response_confessiontimes, response_adorationtimes, response_info)
 
 def count_pages(pdf:IO[bytes]) -> int:
     try:
@@ -110,14 +153,19 @@ def count_pages(pdf:IO[bytes]) -> int:
 if __name__ == '__main__':
     # Test code
     from tempfile import TemporaryFile
-    from os import environ
     from download_bulletins import download_bulletin
 
     with TemporaryFile("w+b") as bulletin_file:
         download_bulletin("our-lady-of-mount-carmel-wickliffe-oh", bulletin_file, "DM")
         bulletin_file.seek(0)
 
-        client = openai.Client()
+        # Use Ollama if configured, otherwise OpenAI
+        if OLLAMA_BASE_URL:
+            print(f"Using Ollama at {OLLAMA_BASE_URL} with model {OLLAMA_MODEL}")
+            client = get_ollama_client()
+        else:
+            print("Using OpenAI")
+            client = openai.Client()
 
         mass_times = get_times(client, ["mass"], bulletin_file)
 

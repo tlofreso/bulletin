@@ -8,7 +8,7 @@ from tempfile import TemporaryFile, NamedTemporaryFile
 from download_bulletins import download_bulletin
 #from ocr import analyze_document
 #from info_extract import get_times, count_pages
-from structured_output_extract import count_pages, get_times
+from structured_output_extract import count_pages, get_times, get_ollama_client, OLLAMA_BASE_URL
 from notion_stuff import get_notion_client_from_environment, get_all_parishes, get_individual_parish, upload_parish_analysis, upload_parish_info
 from openai import Client
 from rich import print
@@ -86,7 +86,8 @@ def run_parish(parish_id:str, publisher:str, config:argparse.Namespace, mass:boo
 ### Can I resume a run?
 ### Only delete bulletin file remotely after I'm done with it
 ### Adjust event logic & checking
-        openai_client = Client()
+        # Use Ollama if configured, otherwise OpenAI
+        openai_client = get_ollama_client() if OLLAMA_BASE_URL else Client()
 
         activities_to_get = []
         if mass:
