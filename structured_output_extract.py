@@ -1,11 +1,17 @@
 import json
+import os
 from time import sleep
 from typing import List, IO
 
 from pydantic import BaseModel, Field
 import PyPDF2
 from tempfile import NamedTemporaryFile
-from ocr_local import analyze_document
+
+# Use remote OCR server if OCR_SERVER_URL is set, otherwise use local Marker
+if os.environ.get("OCR_SERVER_URL"):
+    from ocr_client import analyze_document
+else:
+    from ocr_local import analyze_document
 
 #from openai import Client
 import openai

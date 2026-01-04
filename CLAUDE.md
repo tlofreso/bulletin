@@ -61,6 +61,8 @@ notion_to_app.py / notion_to_json.py (export)
 - `structured_output_extract.py` - GPT-4o with Pydantic structured output for parsing
 - `notion_stuff.py` - Notion API CRUD operations, `ParishRow` class
 - `ocr_local.py` - Local OCR using Marker (PDF→markdown), used by default
+- `ocr_client.py` - Client for remote OCR server (used when `OCR_SERVER_URL` is set)
+- `ocr_server/` - FastAPI server for remote OCR processing (see below)
 - `ocr.py` - Azure Document Intelligence wrapper (legacy, requires Azure credentials)
 - `parishIDs.csv` - Source list of 820+ parish IDs across 6 dioceses
 
@@ -88,3 +90,31 @@ Note: Marker OCR downloads ~2GB of models to `~/.cache/huggingface/` on first ru
 GitHub Actions workflow (`.github/workflows/gh-actions.yml`):
 - Runs `python main.py -avmec` every Saturday at 2 PM UTC
 - Manual trigger available via workflow_dispatch
+
+## Remote OCR Server (Optional)
+
+The OCR processing can be offloaded to a remote server for better performance on dedicated hardware.
+
+**Setup:**
+```bash
+# On the OCR server machine
+cd ocr_server
+pip install -r requirements.txt
+python server.py  # or: uvicorn server:app --host 0.0.0.0 --port 8000
+
+# Or with Docker
+docker compose up --build
+```
+
+**Configuration:**
+Set `OCR_SERVER_URL` in `.env` to enable remote OCR:
+```bash
+OCR_SERVER_URL=http://192.168.1.100:8000
+```
+
+If `OCR_SERVER_URL` is not set, local Marker OCR is used (default behavior).
+
+**API Endpoints:**
+- `POST /jobs` - Submit PDF, returns `{job_id}`
+- `GET /jobs/{job_id}` - Get job status/result
+- `GET /health` - Health check with queue status

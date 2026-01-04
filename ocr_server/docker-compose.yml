@@ -1,0 +1,12 @@
+services:
+  ocr-server:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist Hugging Face model cache (~2GB) across restarts
+      - hf-cache:/root/.cache/huggingface
+    restart: unless-stopped
+
+volumes:
+  hf-cache:
