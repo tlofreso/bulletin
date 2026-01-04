@@ -7,6 +7,7 @@ services:
       # Persist Hugging Face model cache (~2GB) across restarts
 #      - hf-cache:/root/.cache/huggingface
       - /mnt/user/appdata/ocr:/root
+      - /mnt/user/appdata/ocr/python:/usr/local/lib/python3.11
     deploy:
       resources:
         reservations:

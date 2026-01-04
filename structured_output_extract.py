@@ -67,16 +67,40 @@ def get_ollama_client():
     )
 
 
+def truncate_to_pages(markdown: str, max_pages: int = 4) -> str:
+    """Truncate markdown to first N pages based on page markers from OCR.
+
+    Note: Local LLMs (7B-14B) struggle with long bulletin text. Consider
+    keeping the LLM component outsourced (OpenAI, etc.) for better accuracy.
+    """
+    import re
+    # Find page markers like ![](_page_0_...) or ![](_page_1_...)
+    page_pattern = re.compile(r'!\[\]\(_page_(\d+)_')
+
+    matches = list(page_pattern.finditer(markdown))
+    if not matches:
+        # No page markers, return as-is
+        return markdown
+
+    # Find the position where page number exceeds max_pages
+    for match in matches:
+        page_num = int(match.group(1))
+        if page_num >= max_pages:
+            return markdown[:match.start()].strip()
+
+    return markdown
+
+
 def extract_with_ollama(client: openai.Client, prompt: str, schema: type[BaseModel], content: str):
-    """Extract structured data using Ollama with JSON mode"""
+    """Extract structured data using Ollama with JSON prompting"""
     schema_json = schema.model_json_schema()
 
     system_prompt = f"""{prompt}
 
-You must respond with valid JSON matching this schema:
+You must respond with valid JSON matching this exact schema:
 {json.dumps(schema_json, indent=2)}
 
-Respond ONLY with the JSON object, no other text."""
+IMPORTANT: Respond with ONLY the JSON object. No markdown, no explanation, no code blocks. Just pure JSON."""
 
     completion = client.chat.completions.create(
         model=OLLAMA_MODEL,
@@ -84,10 +108,24 @@ Respond ONLY with the JSON object, no other text."""
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": content},
         ],
-        response_format={"type": "json_object"},
     )
 
-    response_text = completion.choices[0].message.content
+    response_text = completion.choices[0].message.content.strip()
+
+    # Try to extract JSON from response (handle markdown code blocks)
+    if response_text.startswith("```"):
+        # Extract content between code blocks
+        lines = response_text.split("\n")
+        json_lines = []
+        in_block = False
+        for line in lines:
+            if line.startswith("```"):
+                in_block = not in_block
+                continue
+            if in_block:
+                json_lines.append(line)
+        response_text = "\n".join(json_lines)
+
     response_json = json.loads(response_text)
     return schema.model_validate(response_json)
 
@@ -112,6 +150,10 @@ def get_times(client: openai.Client, activity: List[str], bulletin_pdf: IO[bytes
     # Choose extraction method based on configuration
     use_ollama = OLLAMA_BASE_URL is not None
     extract_fn = extract_with_ollama if use_ollama else extract_with_openai
+
+    # Truncate input for local LLMs (they struggle with long documents)
+    if use_ollama:
+        bulletin_md = truncate_to_pages(bulletin_md, max_pages=4)
 
     for event in activity:
         prompt = MASSTIME_PROMPT

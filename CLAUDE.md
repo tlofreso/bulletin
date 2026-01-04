@@ -130,6 +130,14 @@ If `OCR_SERVER_URL` is not set, local Marker OCR is used (default behavior).
 
 Run Ollama on a dedicated GPU server for LLM extraction.
 
+**Note:** Local LLMs (7B-14B parameters) struggle with long bulletin text and may produce
+inconsistent results. Consider keeping the LLM component outsourced (OpenAI, etc.) for
+better accuracy. The Ollama option is provided for cost savings and privacy, but requires
+larger models (32B+) for reliable extraction.
+
+When using Ollama, input is automatically truncated to the first 4 pages of the bulletin
+to improve extraction quality.
+
 **Setup:**
 ```bash
 # On the Ollama server
